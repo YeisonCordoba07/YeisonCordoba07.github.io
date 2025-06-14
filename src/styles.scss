@@ -46,9 +46,11 @@
 
 
     /* -------------------- Info -------------------- */
-    --info-profile-subtitle-color: dodgerblue;
-    --info-profile-title-color: black;
-    --info-profile-text-color: #262626;
+    --info-profile-title-color: #1c1c1c;
+    --info-profile-subtitle-color: white;
+    --info-profile-subtitle-background-color: mediumvioletred;
+    --info-profile-text-color: #444;
+    --info-profile-text-bold-color: #4f4f4f;
     --info-profile-background: #fff1f1;
     --info-profile-gradient-background: linear-gradient(
             45deg,
@@ -147,9 +149,11 @@
     --copy-element-svg-color-hover: var(--copy-element-svg-color);
 
 
-    --info-profile-subtitle-color: #4fffff;
+    --info-profile-subtitle-color: gold;
+    --info-profile-subtitle-background-color: #202020;
     --info-profile-title-color: white;
-    --info-profile-text-color: #ffffff;
+    --info-profile-text-bold-color: #ffd600;
+    --info-profile-text-color: #fffbf7;
 
     --info-profile-background: #d0d0d0;
     --info-profile-gradient-background: linear-gradient(
