@@ -1,0 +1,67 @@
+<article class="card-project">
+
+
+  <div class="tooltip-container" *ngIf="showInfo">
+    <app-tooltip class="tooltip">
+      Estos proyectos fueron ejercicios para mejorar mis habilidades en
+      diseño y desarrollo web con HTML y CSS. Cada uno refleja mi progreso,
+      mostrando cómo fui mejorando mis conocimientos y mi atención al
+      detalle en cada réplica
+    </app-tooltip>
+  </div>
+
+
+
+  <h3 class="card-project__title" *ngIf="title">
+    {{title}}
+  </h3>
+
+  <figure class="card-project__image-container">
+    <img class="card-project__image" [src]="src" alt="Imagen del proyecto" />
+  </figure>
+
+  <p class="card-project__description" *ngIf="description">
+    {{description}}
+  </p>
+
+  <div class="card-project__tag">
+    <ng-content></ng-content>
+  </div>
+
+  <div class="card-project__button-container">
+
+
+        <a class="card-project__link" [href]="resultLink" target="_blank" *ngIf="resultLink">
+          <app-button>
+            <span class="card-project__arrow">
+              Ver
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                height="23"
+                width="23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </span>
+          </app-button>
+        </a>
+
+
+
+
+
+        <a class="card-project__link" [href]="githubLink" target="_blank" *ngIf="githubLink">
+          <app-button src="assets/github-black.svg">Código</app-button>
+        </a>
+
+
+  </div>
+</article>

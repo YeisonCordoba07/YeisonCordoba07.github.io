@@ -1,0 +1,32 @@
+  .button{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        width: fit-content;
+        height: 50px;
+
+        transition: transform 0.2s;
+        border: none;
+        cursor: pointer;
+        background: var(--button-background);
+    }
+
+    .button:hover{
+        transform: scale(1.1);
+    }
+
+    .button__icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .button__text{
+        font-size: var(--button-font-size);
+        font-family: var(--button-font-family);
+        color: var(--button-text-color);
+        font-weight: 600;
+    }

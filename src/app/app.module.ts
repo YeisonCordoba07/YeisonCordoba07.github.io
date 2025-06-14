@@ -6,6 +6,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { InfoComponent } from './components/info/info.component';
 import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { TitleSectionComponent } from './components/title-section/title-section.component';
+import { ProjectComponent } from './components/project/project.component';
+import { CardProjectComponent } from './components/card-project/card-project.component';
+import { ButtonComponent } from './components/button/button.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { TagComponent } from './components/tag/tag.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -13,10 +19,16 @@ import { TitleSectionComponent } from './components/title-section/title-section.
     NavbarComponent,
     InfoComponent,
     KnowledgeComponent,
-    TitleSectionComponent
+    TitleSectionComponent,
+    ProjectComponent,
+    CardProjectComponent,
+    ButtonComponent,
+    TooltipComponent,
+    TagComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
