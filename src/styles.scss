@@ -1,1 +1,241 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --mobile-font-title-size: 45px;
+    --font-family: Fredoka, Nunito, serif;
+    --border-radius: 10px;
+
+    /*--document-background-color: #fbfcfe;*/
+    --document-background-color:linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
+
+
+    /* -------------------- Button -------------------- */
+    --button-background: #202020;
+    --button-text-color: white;
+    --button-font-family: 'Roboto', sans-serif;
+    --button-font-size: 18px;
+
+
+    /* -------------------- Card Project -------------------- */
+    --card-project-image-gradient: linear-gradient(
+            45deg,
+            rgba(64, 156, 255, 0.3),
+            rgba(218, 143, 255, 0.4),
+            rgba(255, 105, 97, 0.2),
+            rgba(255, 179, 64, 0.5),
+            rgba(255, 212, 38, 0.3)
+    );
+    --card-project-title: black;
+    --card-project-description: black;
+
+
+    /* -------------------- Copy Element -------------------- */
+    --copy-element-text-color: white;
+    --copy-element-background-color: rgb(64, 67, 79);
+    --copy-element-svg-background-color: white;
+    --copy-element-svg-color: black;
+    --copy-element-svg-color-hover: black;
+
+
+    /* -------------------- Info -------------------- */
+    --info-profile-subtitle-color: dodgerblue;
+    --info-profile-title-color: black;
+    --info-profile-text-color: #262626;
+    --info-profile-background: #fff1f1;
+    --info-profile-gradient-background: linear-gradient(
+            45deg,
+            rgba(64, 156, 255, 0.4),
+            rgba(218, 143, 255, 0.6),
+            rgba(255, 105, 97, 0.25),
+            rgba(255, 179, 64, 0.3),
+            rgba(255, 212, 0, 0.5)
+    );
+
+    --profile-image-gradient-background: linear-gradient(
+            75deg,
+            rgba(64, 156, 255, 0.2),
+            rgba(218, 143, 255, 0.4),
+            rgba(255, 105, 97, 0.3),
+            rgba(255, 179, 64, 0.4),
+            rgba(255, 212, 38, 0.7)
+    );
+
+
+    /* -------------------- Social Icons -------------------- */
+    --social-icons-background: #ffffff;
+    --social-icons-color: black;
+
+
+    /* -------------------- Knowledge -------------------- */
+    --knowledge-background: paleturquoise;
+    --knowledge-background-container: lightseagreen;
+
+
+    /* -------------------- CardProject -------------------- */
+    --card-project-background: white;
+    --card-project-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1);
+    /*--card-project-box-shadow: 0px 4px 24px 0px rgba(79, 114, 205, 0.15);*/
+    --card-project-background-gradient: linear-gradient(
+            45deg,
+            rgba(64, 156, 255, 0.3),
+            rgba(218, 143, 255, 0.4),
+            rgba(255, 105, 97, 0.2),
+            rgba(255, 179, 64, 0.5),
+            rgba(255, 212, 38, 0.3)
+    );
+
+
+    /* -------------------- Tag -------------------- */
+    --tag-background: white;
+    --tag-text-color: #2f2f2f;
+    --tag-border-color: black;
+
+
+    /* -------------------- Header -------------------- */
+    --header-background: rgba(255, 255, 255, 0.7);
+    --header-text-color: black;
+
+    --header-active-text-color: #ff9100;
+    --header-active-text-color-hover: goldenrod;
+    --header-active-border-color: var(--header-active-text-color);
+
+    --header-navbar-border: none;
+
+
+    /* -------------------- Footer -------------------- */
+    --footer-background:  #171717;
+}
+
+
+
+
+/* -------------------- ---------- -------------------- */
+/* -------------------- DARK THEME -------------------- */
+/* -------------------- ---------- -------------------- */
+[data-theme="dark"] {
+
+    --document-background-color: #001625;
+
+
+    /* -------------------- Buttons -------------------- */
+    --button-background: #000000;
+    --button-text-color: #ffffff;
+
+    --card-project-image-gradient: linear-gradient(
+            45deg,
+            rgba(64, 156, 255, 0.3),
+            rgba(218, 143, 255, 0.4),
+            rgba(255, 105, 97, 0.2),
+            rgba(255, 179, 64, 0.5),
+            rgba(255, 212, 38, 0.3)
+    );
+    --card-project-title: white;
+    --card-project-description: #dddddd;
+
+    --copy-element-text-color: #ffffff;
+    --copy-element-background-color: rgb(33, 33, 33);
+    --copy-element-svg-background-color: #818181;
+    --copy-element-svg-color: #000000;
+    --copy-element-svg-color-hover: var(--copy-element-svg-color);
+
+
+    --info-profile-subtitle-color: #4fffff;
+    --info-profile-title-color: white;
+    --info-profile-text-color: #ffffff;
+
+    --info-profile-background: #d0d0d0;
+    --info-profile-gradient-background: linear-gradient(
+            135deg,
+            rgba(0, 105, 255, 0.7),
+            rgba(110, 77, 255, 0.8),
+            rgba(218, 143, 255, 0.8)
+    );
+
+    --profile-image-gradient-background: linear-gradient(
+            75deg,
+            rgba(0, 105, 255, 0.7),
+            rgba(110, 77, 255, 0.8),
+            rgba(218, 143, 255, 0.8)
+    );
+
+
+    /* -------------------- Social Icons -------------------- */
+    --social-icons-background:  #2a2a2a;
+    --social-icons-color: white;
+
+
+    /* -------------------- Knowledge -------------------- */
+    --knowledge-background: #176963;
+    --knowledge-background-container: #083f3b;
+
+
+    /* -------------------- CardProject -------------------- */
+    --card-project-box-shadow: 0 5px 20px 0 rgb(0, 0, 0);
+    --card-project-background: #1b3b45;
+    --card-project-background-gradient: linear-gradient(
+            135deg,
+            rgba(0, 105, 255, 0.8),
+            rgba(89, 77, 255, 0.8),
+            rgb(185, 81, 255),
+            rgb(196, 81, 255)
+    );
+
+
+    /* -------------------- Tag -------------------- */
+    --tag-background: rgba(0, 0, 0, 0.5);
+    --tag-text-color: #e5e5e5;
+    --tag-border-color: #525252;
+
+
+    /* -------------------- Header -------------------- */
+    --header-background: rgba(38, 38, 38, 0.8);
+    --header-text-color: #f1f1f1;
+
+    --header-active-text-color: dodgerblue;
+    --header-active-text-color-hover: #56c8ff;
+    --header-active-border-color: var(--header-active-text-color);
+
+    --header-navbar-border: 1px solid dimgray;
+
+
+    /* -------------------- Footer -------------------- */
+    --footer-background: #090808;
+
+}
+
+
+
+
+/* -------------------- ---------- -------------------- */
+/* ---------------------- GENERAL --------------------- */
+/* -------------------- ---------- -------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-separation{
+    padding: 80px 15px;
+    background-color: inherit;
+}
+
+
+.social__icons {
+    background-color: var(--social-icons-background);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform, background-color;
+    transition-duration: 0.2s;
+    color: var(--social-icons-color);
+    cursor: pointer;
+}
+
+.social__icons:hover {
+    transform: scale(1.25);
+}
+
+
+

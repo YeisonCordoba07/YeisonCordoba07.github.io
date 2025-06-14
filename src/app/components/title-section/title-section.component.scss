@@ -1,0 +1,33 @@
+
+    div {
+        display: flex;
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        height: fit-content;
+    }
+
+    .projects__title {
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        font-family: fredoka, nunito, serif;
+        font-weight: 900;
+        margin: 0;
+        background: linear-gradient(
+                45deg,
+                rgb(0, 166, 255),
+                rgb(171, 92, 255),
+                rgb(255, 116, 185),
+                rgb(255, 174, 0),
+                rgb(255, 89, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /*-webkit-text-stroke: 2px black;*/
+    }
+
+    @media (max-width: 767px) {
+        .projects__title {
+            font-size: var(--mobile-font-title-size);
+        }
+    }
