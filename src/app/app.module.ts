@@ -12,6 +12,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TagComponent } from './components/tag/tag.component';
 import {NgOptimizedImage} from "@angular/common";
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NgOptimizedImage} from "@angular/common";
     CardProjectComponent,
     ButtonComponent,
     TooltipComponent,
-    TagComponent
+    TagComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
