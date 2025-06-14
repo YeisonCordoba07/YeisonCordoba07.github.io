@@ -13,7 +13,6 @@ export class TagComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.src);
   }
 
 }

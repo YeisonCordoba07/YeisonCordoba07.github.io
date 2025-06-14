@@ -1,52 +1,53 @@
+app-card-project {
+  height: 100%;
+}
 
-    .projects {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 1024px;
-        margin: auto;
-        gap: 40px;
-    }
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1024px;
+  margin: auto;
+  gap: 40px;
+}
 
-    .projects__container {
-        width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+.projects__container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
-        align-items: center;
-        justify-items: center;
-        gap: 20px;
-    }
-
-
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
 
 
-    @media (max-width: 767px) {
-        .projects__container {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            width: 100%;
-        }
-        .projects{
-            width: 100%;
-        }
-    }
+@media (max-width: 767px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+  }
+}
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        .projects__container {
-            grid-template-columns: 49% 49%;
-            grid-template-rows: auto;
-            width: 100%;
-        }
-        .projects{
-            width: 100%;
-        }
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects__container {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+  }
+}
 
-    @media (min-width: 1024px) {
-        .projects__container {
-            min-width: 1024px;
-        }
-    }
+@media (min-width: 1024px) {
+  .projects__container {
+    min-width: 1024px;
+  }
+}

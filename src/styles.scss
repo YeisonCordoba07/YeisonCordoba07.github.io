@@ -3,8 +3,18 @@
     --font-family: Fredoka, Nunito, serif;
     --border-radius: 10px;
 
-    /*--document-background-color: #fbfcfe;*/
-    --document-background-color:linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
+    --document-background-color: #fbfcfe;
+    /*--document-background-color:linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));*/
+
+
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--document-background-color);
+    scroll-behavior: smooth;
+  }
+
 
 
     /* -------------------- Button -------------------- */
