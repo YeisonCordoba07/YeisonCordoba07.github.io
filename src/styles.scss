@@ -27,7 +27,7 @@
     /* -------------------- Card Project -------------------- */
     --card-project-image-gradient: linear-gradient(
             45deg,
-            rgba(64, 156, 255, 0.3),
+            rgba(64, 156, 255, 0.5),
             rgba(218, 143, 255, 0.4),
             rgba(255, 105, 97, 0.2),
             rgba(255, 179, 64, 0.5),
@@ -46,7 +46,9 @@
 
 
     /* -------------------- Info -------------------- */
-    --info-profile-title-color: #1c1c1c;
+  //--info-profile-title-color: #1c1c1c;
+    --info-profile-title-color: white;
+    --info-profile-title-background-color:  #2B2B2BFF;
     --info-profile-subtitle-color: white;
     --info-profile-subtitle-background-color: rgba(199, 21, 133, 0.59);
     --info-profile-subtitle-transparent-background-color: linear-gradient(
@@ -64,18 +66,18 @@
             45deg,
             rgba(64, 156, 255, 0.4),
             rgba(218, 143, 255, 0.6),
-            rgba(255, 105, 97, 0.25),
-            rgba(255, 179, 64, 0.3),
+            rgba(255, 105, 97, 0.3),
+            rgba(255, 179, 64, 0.35),
             rgba(255, 212, 0, 0.5)
     );
 
     --profile-image-gradient-background: linear-gradient(
             75deg,
-            rgba(64, 156, 255, 0.2),
-            rgba(218, 143, 255, 0.4),
-            rgba(255, 105, 97, 0.3),
-            rgba(255, 179, 64, 0.4),
-            rgba(255, 212, 38, 0.7)
+            rgba(64, 156, 255, 0.4),
+            rgba(218, 143, 255, 0.5),
+            rgba(255, 105, 97, 0.4),
+            rgba(255, 179, 64, 0.6),
+            rgba(255, 212, 38, 0.6)
     );
 
 
@@ -157,10 +159,11 @@
     --copy-element-svg-color-hover: var(--copy-element-svg-color);
 
 
+    --info-profile-title-color: white;
+    --info-profile-title-background-color:  #383737;
     --info-profile-subtitle-color: gold;
     --info-profile-subtitle-background-color: #202020;
-  --info-profile-subtitle-transparent-background-color: transparent;
-    --info-profile-title-color: white;
+    --info-profile-subtitle-transparent-background-color: transparent;
     --info-profile-text-bold-color: #ffd600;
     --info-profile-text-color: #fffbf7;
 
