@@ -4,7 +4,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Fredoka, nunito, sans-serif;
+  font-family: var(--font-family);
   border-top: 1px solid #818181;
   flex-direction: column;
   background-color: var(--footer-background);
@@ -22,7 +22,7 @@ footer {
 
 .footer__title {
   font-size: 40px;
-  font-family: Fredoka, nunito, serif;
+  font-family: var(--font-family);
 }
 
 .footer__button-container {

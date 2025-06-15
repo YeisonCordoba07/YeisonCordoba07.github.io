@@ -1,6 +1,8 @@
 :root {
     --mobile-font-title-size: 45px;
     --font-family: Fredoka, Nunito, serif;
+    --font-family-secondary: "Archivo Black", sans-serif;
+    --font-family-body: "Roboto", sans-serif;
     --border-radius: 10px;
 
     --document-background-color: #fbfcfe;
@@ -149,8 +151,8 @@
             rgba(255, 179, 64, 0.5),
             rgba(255, 212, 38, 0.3)
     );
-    --card-project-title: #e0e0e0;
-    --card-project-description: #b0bec5;
+    --card-project-title: #e6e5e5;
+    --card-project-description: #cacaca;
 
     --copy-element-text-color: #ffffff;
     --copy-element-background-color: rgb(33, 33, 33);
@@ -160,7 +162,7 @@
 
 
     --info-profile-title-color: white;
-    --info-profile-title-background-color:  #383737;
+    --info-profile-title-background-color: #282828;
     --info-profile-subtitle-color: gold;
     --info-profile-subtitle-background-color: #202020;
     --info-profile-subtitle-transparent-background-color: transparent;
