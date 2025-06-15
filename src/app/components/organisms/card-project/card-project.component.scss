@@ -71,7 +71,9 @@
     color: white;
     display: flex;
     gap: 15px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: var(--font-family);
+
   }
 
   .tooltip-container {
