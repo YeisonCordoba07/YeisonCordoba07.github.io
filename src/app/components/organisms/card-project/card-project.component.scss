@@ -12,6 +12,7 @@
     box-shadow: var(--card-project-box-shadow);
     position: relative;
     background-color: var(--card-project-background);
+    border: 1px solid color-mix(in oklab, white 10%, transparent);
   }
 
   .card-project__title {

@@ -5,15 +5,20 @@
     --font-family-body: "Roboto", sans-serif;
     --border-radius: 10px;
 
-    --document-background-color: #fbfcfe;
-    /*--document-background-color:linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));*/
-
+    //--document-background-color: #fbfcfe;
+    --document-background-image: radial-gradient(
+        rgb(209, 209, 209) 1px, transparent 1px),
+        linear-gradient(to right, #fcf7ff 70%, #fffafa);
 
   html,
   body {
     margin: 0;
     width: 100%;
-    background-color: var(--document-background-color);
+    //background: var(--document-background-color);
+
+    background-image: var(--document-background-image);
+    background-size: 20px 20px, 100% 100%;
+
     scroll-behavior: smooth;
   }
 
@@ -136,7 +141,11 @@
 /* -------------------- ---------- -------------------- */
 [data-theme="dark"] {
 
-    --document-background-color: #001625;
+    //--document-background-color: linear-gradient(180deg, #101325, #1c1f38, #101426);
+    --document-background-image: radial-gradient(
+        rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to right, rgb(8, 10, 17), rgb(22, 13, 22)
+    );
 
 
     /* -------------------- Buttons -------------------- */
@@ -151,7 +160,7 @@
             rgba(255, 179, 64, 0.5),
             rgba(255, 212, 38, 0.3)
     );
-    --card-project-title: #e6e5e5;
+    --card-project-title: #ededed;
     --card-project-description: #cacaca;
 
     --copy-element-text-color: #ffffff;
@@ -196,8 +205,8 @@
 
 
     /* -------------------- CardProject -------------------- */
-    --card-project-box-shadow: 0 5px 20px 0 rgb(0, 0, 0);
-    --card-project-background: #1b3b45;
+    --card-project-box-shadow: none;
+    --card-project-background: rgb(36 36 36 / 1);
     --card-project-background-gradient: linear-gradient(
             135deg,
             rgba(0, 105, 255, 0.8),
