@@ -13,6 +13,7 @@ export class CardProjectComponent implements OnInit {
     @Input() githubLink: string = "";
     @Input() resultLink: string = "";
     @Input() showInfo: boolean = false;
+    @Input() showStar: boolean = false;
 
   constructor() { }
 
