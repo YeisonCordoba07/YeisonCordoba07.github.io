@@ -184,11 +184,30 @@ section {
         }
     }
 
-    @media (min-width: 771px) and (max-width: 1023px) {
+    @media(min-width:771px) and (max-width:860px){
+        section {
+            width: 100%;
+            height: 700px;
+        }
+        .profile__title{
+            text-align: center;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+        .profile__text{
+            margin-top: 0px;
+            font-size: 23px;
+        }
+        .profile__background{
+            gap: 10px;
+        }
+    }
+
+    @media (min-width: 861px) and (max-width: 1023px) {
 
         section {
             width: 100%;
-            height: 110vh;
+            height: 700px;
         }
         .profile__title{
             text-align: center;
