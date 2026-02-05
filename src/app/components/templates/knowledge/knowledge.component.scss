@@ -24,25 +24,35 @@
         width: 1024px;
         display: flex;
         align-items: center;
-        padding: 62px;
+        padding: 100px;
         border-radius: 10px;
     }
 
 
     .knowledge__container {
-        display: flex;
-        width: 1024px;
-        flex-wrap: wrap;
+        //display: flex;
+        width: 100%;
+
         box-sizing: border-box;
+        justify-content: center;
+        display: grid;
+        grid-template-columns:repeat(5, auto);
+        grid-template-rows: repeat(2, auto);
+
     }
 
 
     @media(max-width: 400px){
         .knowledge__background-container{
             padding: 40px 10px;
+            width: 100%;
         }
         .knowledge__container img{
             width: 80px;
+        }
+        .knowledge__container{
+            flex-wrap: wrap;
+            display: flex;
         }
     }
 
@@ -50,6 +60,7 @@
 
         .knowledge__background-container{
             padding: 30px;
+            width: 100%;
         }
         .knowledge__container {
             display: flex;
@@ -61,11 +72,16 @@
         }
     }
 
-    @media (max-width: 1023px){
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        .knowledge__container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
         .knowledge__background-container{
             width: 100%;
         }
-        .knowledge__container {
-          justify-content: center;
-        }
+
     }
