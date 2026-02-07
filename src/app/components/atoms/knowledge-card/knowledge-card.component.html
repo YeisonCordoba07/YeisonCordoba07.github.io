@@ -6,5 +6,8 @@
         class="knowledge-card__image" 
         [src]="src" 
         [alt]="alt"/>
-    <span class="knowledge-card__text" *ngIf="showText">{{text}}</span>
+    <span class="knowledge-card__text"
+    [ngClass]="{
+        'knowledge-card__text-active': showText
+    }">{{text}}</span>
 </div>

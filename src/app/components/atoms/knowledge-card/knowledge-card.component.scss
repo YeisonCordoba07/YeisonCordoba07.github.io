@@ -8,6 +8,8 @@
     position: relative;
     overflow: hidden;
 }
+
+
 .knowledge-card__image{
      transition: filter 0.5s ease-in-out, brightness 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -29,19 +31,20 @@
     border-radius: 5px;
     font-weight: bold;
     white-space: nowrap;
-    animation: fadeIn 0.5s ease-in-out;
     font-size: 20px;
     font-family: var(--font-family);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.knowledge-card__text-active{
+    opacity: 1;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
+
+
+
+
 @media(max-width: 400px){
     .knowledge-card__image{
         width: 80px;
