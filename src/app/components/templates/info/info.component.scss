@@ -163,17 +163,17 @@ section {
         
         transition-duration: 150ms;
         cursor: pointer;
-        background-color: #1e8fff80;
-        color: #145ea8;
+        background-color: var(--profile-background-color-cv-button);
+        color: var(--profile-text-color-cv-button);
     }
     .profile__cv-a:hover{
         transform: scale(1.07);
-        background-color: #4ea4f9;
+        background-color: var(--profile-background-color-cv-button-hover);
     }
 
 
 
-    
+
 
     /* ----------------- Responsive ------------------ */
     @media (max-width: 770px) {
