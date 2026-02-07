@@ -119,6 +119,7 @@ section {
     .profile__social-container{
         display: flex;
         gap: inherit;
+
     }
 
     .profile-image {
@@ -145,6 +146,34 @@ section {
         object-fit: cover;
     }
 
+    .profile__cv-a{
+        padding: 10px 20px;
+        border-radius: 25px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        
+        font-size: 23px;
+        font-weight: 600;
+        font-family: var(--font-family);
+        text-decoration: none;
+        position: relative;
+        
+        transition-duration: 150ms;
+        cursor: pointer;
+        background-color: #1e8fff80;
+        color: #145ea8;
+    }
+    .profile__cv-a:hover{
+        transform: scale(1.07);
+        background-color: #4ea4f9;
+    }
+
+
+
+    
 
     /* ----------------- Responsive ------------------ */
     @media (max-width: 770px) {
