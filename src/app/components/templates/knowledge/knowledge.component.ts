@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KnowledgeComponent implements OnInit {
 
+    showText: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  textToggle(): void{
+    this.showText = !this.showText;
   }
 
 }

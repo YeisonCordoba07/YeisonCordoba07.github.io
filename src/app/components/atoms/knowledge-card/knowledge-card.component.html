@@ -1,0 +1,10 @@
+<div class="knowledge-card">
+    <img 
+    [ngClass]="{
+        'knowledge-card__image-blur': showText
+    }"
+        class="knowledge-card__image" 
+        [src]="src" 
+        [alt]="alt"/>
+    <span class="knowledge-card__text" *ngIf="showText">{{text}}</span>
+</div>

@@ -14,6 +14,7 @@ import { TagComponent } from './components/atoms/tag/tag.component';
 import {NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './components/templates/footer/footer.component';
 import {ButtonComponent} from "./components/atoms/button/button.component";
+import { KnowledgeCardComponent } from './components/atoms/knowledge-card/knowledge-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {ButtonComponent} from "./components/atoms/button/button.component";
     ButtonComponent,
     TooltipComponent,
     TagComponent,
-    FooterComponent
+    FooterComponent,
+    KnowledgeCardComponent
   ],
   imports: [
     BrowserModule,

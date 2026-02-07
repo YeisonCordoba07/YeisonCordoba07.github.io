@@ -1,25 +1,87 @@
 <section class="knowledge section-separation" id="conocimientos">
-
   <app-title-section title="Conocimientos"></app-title-section>
+
+
 
   <div class="knowledge__background-container">
 
+    <button class="knowledge__show-text-button" (click)="textToggle()">
+      <p *ngIf="!showText">Mostrar texto</p>
+      <p *ngIf="showText">Ocultar texto</p>
+    </button>
+
     <div class="knowledge__container">
 
-      <img src="assets/tecnologias/ANGULAR.svg" alt="logo angular"/>
-      <img src="assets/tecnologias/CSS.svg" alt="logo css"/>
-      <img src="assets/tecnologias/HTML.svg" alt="logo html"/>
-      <img src="assets/tecnologias/JS.svg" alt="logo js"/>
-      <img src="assets/tecnologias/TS.svg" alt="logo ts"/>
+      <app-knowledge-card
+        src="assets/tecnologias/ANGULAR.svg"
+        alt="logo angular"
+        text="Angular JS"
+        [showText]="showText"
+      ></app-knowledge-card>
+      
+      <app-knowledge-card
+        src="assets/tecnologias/CSS.svg"
+        alt="logo css"
+        text="CSS"
+        [showText]="showText"
+      ></app-knowledge-card>
 
-      <img src="assets/tecnologias/TAILWINDCSS.svg" alt="logo css"/>
-      <img src="assets/tecnologias/JAVA.svg" alt="logo css"/>
-      <img src="assets/tecnologias/SPRING%20BOOT.svg" alt="logo css"/>
-      <img src="assets/tecnologias/MYSQL.svg" alt="logo css"/>
+      <app-knowledge-card
+        src="assets/tecnologias/HTML.svg"
+        alt="logo html"
+        text="HTML"
+        [showText]="showText"
+      ></app-knowledge-card>
 
-      <img src="assets/tecnologias/POSTGRESQL.svg" alt="logo postgreSQL"/>
+      <app-knowledge-card
+        src="assets/tecnologias/JS.svg"
+        alt="logo js"
+        text="JavaScript"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/TS.svg"
+        alt="logo ts"
+        text="TypeScript"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/TAILWINDCSS.svg"
+        alt="logo tailwind"
+        text="Tailwind CSS"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/JAVA.svg"
+        alt="logo java"
+        text="Java"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/SPRING%20BOOT.svg"
+        alt="logo spring boot"
+        text="Spring Boot"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/MYSQL.svg"
+        alt="logo mysql"
+        text="MySQL"
+        [showText]="showText"
+      ></app-knowledge-card>
+
+      <app-knowledge-card
+        src="assets/tecnologias/POSTGRESQL.svg"
+        alt="logo postgreSQL"
+        text="PostgreSQL"
+        [showText]="showText"
+      ></app-knowledge-card>
+
     </div>
-
   </div>
-
 </section>
