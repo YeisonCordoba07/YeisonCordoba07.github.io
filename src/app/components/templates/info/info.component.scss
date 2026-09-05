@@ -149,18 +149,18 @@ section {
     .profile__cv-a{
         padding: 10px 20px;
         border-radius: 25px;
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
-        
+
         font-size: 23px;
         font-weight: 600;
         font-family: var(--font-family);
         text-decoration: none;
         position: relative;
-        
+
         transition-duration: 150ms;
         cursor: pointer;
         background-color: var(--profile-background-color-cv-button);

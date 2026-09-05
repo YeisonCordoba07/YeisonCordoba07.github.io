@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: column;
 
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 30px;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 
     box-shadow: var(--card-project-box-shadow);
     position: relative;
@@ -16,15 +16,16 @@
   }
 
   .card-project__title {
-    font-weight: 900;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: start;
+
     width: 100%;
-    font-family: var(--font-family);
+    font-family: var(--font-family-body);
     color: var(--card-project-title);
 
     text-overflow: ellipsis;
+    position: relative;
     text-wrap: nowrap;
     overflow: hidden;
   }
@@ -48,13 +49,14 @@
   .card-project__description {
     font-family: var(--font-family-body);
     color: var(--card-project-description);
+    font-weight: 300;
   }
 
   .card-project__tag {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin-bottom: 10px;
   }
 
   .card-project__link {
@@ -80,8 +82,9 @@
 
   .tooltip-container {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0px;
+    right: 10px;
+    z-index: 100;
   }
 
   @media (max-width: 767px) {

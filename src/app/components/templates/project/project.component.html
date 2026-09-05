@@ -6,7 +6,7 @@
 
       <app-card-project
         title="UdeA Food"
-        description="Aplicación web inspirada en Rappi, DidiFood y Uber Eats, pero enfocada en las tiendas de la Universidad de Antioquia. Con esta aplicación, los usuarios pueden crear sus propias tiendas y gestionar sus productos, mientras que los clientes pueden explorar, buscar y comprar la oferta gastronómica disponible."
+        [description]="UDEAFOOD_DESCRIPTION"
         src="assets/proyectos/PaginaUdeAFoodLarge.jpg"
         githubLink="https://github.com/YeisonCordoba07/udea-food-front"
         [showStar]="true"
@@ -46,8 +46,8 @@
 
 
         <app-card-project
-            title="Disney Plus"               
-            description="Este proyecto es una réplica responsive de la página principal de Disney Plus hecha con react. El objetivo es recrear el diseño, el movimiento de scroll horizontal, aplicar atomic design y hacerla adaptable o responsive para que se vea bien y funcione en todos los dispositivos."
+            title="Disney Plus"
+            [description]="DISNEY_DESCRIPTION"
             src="assets/proyectos/PaginaDisneyPlusLarge.jpg"
             githubLink="https://github.com/YeisonCordoba07/disney-plus-clone"
             resultLink="https://yeisoncordoba07-disney-plus-clone.vercel.app/"
@@ -76,7 +76,7 @@
 
         <app-card-project
                 title="Emason"
-                description="Emason es una aplicación web diseñada para gestionar artículos de compra, permitiendo su asociación con marcas y múltiples categorías. También tiene un sistema de gestión de roles con tres tipos de usuarios, cada uno con permisos específicos según su rol."
+                [description]="EMASON_DESCRIPTION"
                 src="assets/proyectos/emasonall-shadow.png"
                 githubLink="https://github.com/orgs/BootcampPragma/repositories"
         >
@@ -110,7 +110,7 @@
 
         <app-card-project
                 title="Master Class"
-                description="Replica de la página web de MasterClass utilizando únicamente HTML y CSS. Este proyecto se centró en practicar maquetación, recreando la estructura, estilos y tipografía característicos de la plataforma."
+                [description]="MASTERCLASS_DESCRIPTION"
                 src="assets/proyectos/PaginaMasterClassLarge.jpg"
                 githubLink="https://github.com/YeisonCordoba07/DesarrolloWebEjercicio4"
                 resultLink="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio4/"
@@ -131,7 +131,7 @@
 
         <app-card-project
                 title="Correos España"
-                description="Recreación de la pagina web de Correos España empleando HTML y CSS. Este proyecto permitió desarrollar habilidades en la construcción de diseños estáticos y layouts organizados."
+                [description]="CORREOS_DESCRIPTION"
                 src="assets/proyectos/PaginaCorreosLarge.jpg"
                 githubLink="https://github.com/YeisonCordoba07/DesarrolloWebEjercicio7"
                 resultLink="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio7/"
@@ -151,7 +151,7 @@
 
         <app-card-project
                 title="Mercado Libre"
-                description="Clon de la página web de Mercado Libre implementado con HTML y CSS. El enfoque principal fue la recreación de interfaces de comercio electrónico, trabajando en la disposición de elementos como tarjetas de productos."
+                [description]="MERCADO_DESCRIPTION"
                 src="assets/proyectos/PaginaMercadoLibreLarge.jpg"
                 githubLink="https://github.com/YeisonCordoba07/DesarrolloWebEjercicio8"
                 resultLink="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio8/"
