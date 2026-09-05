@@ -3,7 +3,7 @@
     --font-family: Fredoka, Nunito, serif;
     --font-family-secondary: "Archivo Black", sans-serif;
     --font-family-body: "Roboto", sans-serif;
-    --border-radius: 10px;
+    --border-radius: 25px;
 
     //--document-background-color: #fbfcfe;
     --document-background-image: radial-gradient(
@@ -86,6 +86,15 @@
             rgba(255, 179, 64, 0.6),
             rgba(255, 212, 38, 0.6)
     );
+
+    --profile-image-gradient-background2: linear-gradient(
+            0deg,
+            rgba(218, 143, 255, 0.5),
+            rgba(255, 105, 97, 0.4),
+            rgba(255, 179, 64, 0.6),
+            rgba(255, 212, 38, 0.6)
+    );
+    --profile-image-box-shadow: 0 4px 25px 0 rgb(149, 98, 255, 0.25);
 
 
     /* -------------------- Social Icons -------------------- */
@@ -198,6 +207,9 @@
             rgba(110, 77, 255, 0.8),
             rgba(218, 143, 255, 0.8)
     );
+
+    --profile-image-gradient-background2: var(--profile-image-gradient-background);
+
 
 
     /* -------------------- Social Icons -------------------- */
