@@ -1,8 +1,8 @@
 <div class="tag"
      [style.background-color]="colors.background"
-     [style.color]="colors.text">
+    >
   <img [src]="src" [alt]="tagName + ' icon'"/>
 
-  <span class="tag__name">{{tagName}}</span>
+  <span class="tag__name"  [style.color]="colors.text">{{tagName}}</span>
 
 </div>
