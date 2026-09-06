@@ -4,6 +4,7 @@
         display: inline-block;
         cursor: pointer;
         width: fit-content;
+        z-index: 100;
     }
 
     .info-icon {
@@ -35,22 +36,38 @@
 
     .tooltip-text {
         visibility: hidden;
+
         width: 250px;
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+
         background-color: rgba(0, 0, 0, 0.75);
         backdrop-filter: blur(20px);
+
         color: #fff;
         text-align: center;
+
         padding: 15px;
         border-radius: 10px;
+
         font-family: Fredoka, Nunito, serif;
+        font-size: 14px;
+        font-weight: 300;
 
         position: absolute;
         z-index: 10;
-        bottom: 130%; /* Muestra el tooltip arriba del objeto */
+
+        bottom: 130%;
         left: 50%;
         transform: translateX(-94%);
+
         opacity: 0;
         transition: opacity 0.3s ease;
+
+        /* Importante */
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     /* Flecha del tooltip */
