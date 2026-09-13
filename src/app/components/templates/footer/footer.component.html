@@ -1,30 +1,120 @@
 <footer class="footer">
-  <div class="footer__content">
-    <!-- Íconos -->
-    <div class="footer__icons">
-      <a href="https://github.com/YeisonCordoba07" target="_blank" rel="noopener noreferrer" class="footer__icon">
-        <!-- GitHub SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-          <path
-            fill="currentColor"
-            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
-          />
+  <!-- Sección Superior: Navegación y Contexto (Sin repetir datos personales) -->
+  <section class="footer__main">
+    <!-- Columna 1: Sobre el Portafolio -->
+    <div class="footer__brand">
+      <h3 class="footer__column-title">Portafolio</h3>
+      <p class="footer__brand-description">
+        Espacio dedicado a compartir proyectos, conocimientos técnicos y soluciones en desarrollo de aplicaciones web
+        interactivas y escalables.
+      </p>
+    </div>
+
+    <!-- Columna 2: Navegación Rápida -->
+    <div class="footer__column">
+      <h3 class="footer__column-title">Navegación</h3>
+      <nav class="footer__column-links">
+        <a href="#inicio" class="footer__link">
+          <span class="footer__link-bullet">›</span>
+          Inicio
+        </a>
+        <a href="#conocimientos" class="footer__link">
+          <span class="footer__link-bullet">›</span>
+          Conocimientos
+        </a>
+        <a href="#proyectos" class="footer__link">
+          <span class="footer__link-bullet">›</span>
+          Proyectos
+        </a>
+      </nav>
+    </div>
+
+    <!-- Columna 3: Contacto Directo -->
+    <div class="footer__column">
+      <h3 class="footer__column-title">Contacto</h3>
+      <div class="footer__column-links">
+        <a href="https://www.linkedin.com/in/yeisoncordoba07" target="_blank" rel="noopener noreferrer"
+          class="footer__link">
+          <span class="footer__link-bullet">›</span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/YeisonCordoba07" target="_blank" rel="noopener noreferrer" class="footer__link">
+          <span class="footer__link-bullet">›</span>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Destacada: Tarjeta de Autor con Rol, Redes y Descarga de CV -->
+  <aside class="footer__author-card">
+    <div class="footer__author">
+      <div class="footer__avatar-wrapper">
+        <img src="assets/Yo.webp" alt="Foto de Yeison Cordoba" class="footer__avatar" />
+      </div>
+
+      <div class="footer__author-info">
+        <span class="footer__author-subtitle">
+          Hecho con <span class="footer__highlight">Angular</span> por
+        </span>
+        <h4 class="footer__author-name">Yeison Cordoba</h4>
+        <span class="footer__author-role">Desarrollador Web & Ingeniero de Sistemas</span>
+      </div>
+    </div>
+
+    <!-- Botones de Redes Sociales y Acción -->
+    <div class="footer__socials">
+      <!-- GitHub -->
+      <a href="https://github.com/YeisonCordoba07" target="_blank" rel="noopener noreferrer"
+        class="footer__social-btn footer__social-btn--github" title="GitHub de Yeison Cordoba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
         </svg>
       </a>
 
-      <a href="https://www.linkedin.com/in/yeisoncordoba07" target="_blank" rel="noopener noreferrer" class="footer__icon">
-        <!-- LinkedIn SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/yeisoncordoba07" target="_blank" rel="noopener noreferrer"
+        class="footer__social-btn footer__social-btn--linkedin" title="LinkedIn de Yeison Cordoba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
-
+          <path
+            d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
         </svg>
       </a>
 
-      <a href="https://yeisoncordoba07.github.io/" target="_blank" rel="noopener noreferrer" class="footer__icon">
-        <!-- Sitio personal SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="40" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Botón Descargar CV (más largo con icono y texto) -->
+      <a href="https://drive.google.com/drive/folders/1DUXIt6nre4LOYQ3DbXOF0yJDcuLgOgfJ" target="_blank"
+        rel="noopener noreferrer" class="footer__social-btn footer__social-btn--cv" title="Descargar Curriculum Vitae">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+          <path d="M7 11l5 5l5 -5" />
+          <path d="M12 4l0 12" />
+        </svg>
+        <span>Descargar CV</span>
+      </a>
+
+      <!-- Botón Sitio Web (Comentado porque redirige al propio sitio)
+      <a
+        href="https://yeisoncordoba07.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer__social-btn footer__social-btn--portfolio"
+        title="Sitio Web Personal de Yeison Cordoba"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M20.94 13.045a9 9 0 1 0 -8.953 7.955" />
           <path d="M3.6 9h16.8" />
@@ -35,13 +125,8 @@
           <path d="M21 21.5v-4.5h-4.5" />
         </svg>
       </a>
+      -->
     </div>
+  </aside>
 
-    <h3 class="footer__name">Yeison Cordoba</h3>
-  </div>
-
-  <p class="footer__credits">
-    Hecho con <span class="footer__tech">Angular</span> 2025
-  </p>
 </footer>
-
