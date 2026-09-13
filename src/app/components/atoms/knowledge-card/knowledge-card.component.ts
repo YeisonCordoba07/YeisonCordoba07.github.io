@@ -10,7 +10,6 @@ export class KnowledgeCardComponent implements OnInit {
     @Input() src: string = "";
     @Input() alt: string = "";
     @Input() text: string = "";
-    @Input() showText: boolean = false;
 
   constructor() { }
 
