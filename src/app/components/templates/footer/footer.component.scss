@@ -138,13 +138,14 @@
     width: fit-content;
     max-width: 100%;
     background-color: #ffffff;
-    border-radius: 60px 24px 24px 60px;
-    padding: 20px 36px;
+    border-radius: 24px;
+    padding: 36px 44px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
     color: #000000;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    font-family: var(--font-family-body);
     box-shadow: 0px 0px 30px -5px rgba(253, 187, 116, 0.75),
       0px 0px 60px 0px rgba(255, 237, 213, 0.35);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -155,97 +156,139 @@
         0px 0px 70px 0px rgba(255, 237, 213, 0.45);
     }
 
-    @media (max-width: 768px) {
-      gap: 28px;
-      padding: 20px 28px;
-    }
-
     @media (max-width: 640px) {
-      flex-direction: column;
-      border-radius: 28px;
-      padding: 24px 20px;
-      gap: 24px;
+      padding: 26px 22px;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
     }
   }
 
   &__author {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 22px;
+    width: 100%;
 
-    @media (max-width: 640px) {
+    @media (max-width: 580px) {
       flex-direction: column;
       text-align: center;
-      gap: 12px;
+      gap: 16px;
     }
 
     &-info {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 24px;
+      gap: 8px;
 
-      @media (max-width: 768px) {
-        margin-right: 8px;
-      }
-
-      @media (max-width: 640px) {
-        margin-right: 0;
+      @media (max-width: 580px) {
         align-items: center;
         text-align: center;
       }
     }
 
-    &-subtitle {
-      font-size: 12px;
-      font-weight: 700;
-      color: #71717a;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+    // Fila: nombre + badge
+    &-name-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+
+
+      @media (max-width: 580px) {
+        justify-content: center;
+      }
     }
 
     &-name {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      font-weight: 800;
-      font-size: 24px;
+      font-weight: 1000;
+      font-size: 27px;
       line-height: 1.2;
       color: #18181b;
-      margin: 2px 0 0;
+      margin: 0;
       letter-spacing: -0.5px;
+      font-family: var(--font-family);
+
     }
 
-    &-role {
-      font-size: 13px;
-      font-weight: 600;
-      color: #ea580c;
-      margin-top: 3px;
-      letter-spacing: 0.3px;
+    // Badge "Junior" en morado
+    &-badge {
+      background-color: #ede9fe;
+      color: #7c3aed;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid #c4b5fd;
       white-space: nowrap;
+      flex-shrink: 0;
+      font-family: var(--font-family-body);
+    }
+
+    // Rol / Subtítulo en tono oscuro limpio (no naranja)
+    &-role {
+      font-size: 15px;
+      font-weight: 600;
+      color: #374151;
+      margin: 0;
+      letter-spacing: 0.1px;
+      white-space: nowrap;
+      font-family: var(--font-family-body);
 
       @media (max-width: 480px) {
         white-space: normal;
+      }
+    }
+
+    // Ubicación y disponibilidad
+    &-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 2px;
+      font-family: var(--font-family-body);
+
+      svg {
+        flex-shrink: 0;
+        color: #9ca3af;
+      }
+
+      @media (max-width: 580px) {
+        justify-content: center;
       }
     }
   }
 
   &__avatar-wrapper {
     position: relative;
-    width: 56px;
-    height: 56px;
+    width: 78px;
+    height: 78px;
     flex-shrink: 0;
   }
 
   &__avatar {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 16px;
     background-color: #fb923c;
-    object-fit: contain;
-    border: 2px solid #fdba74;
+    object-fit: cover;
+    object-position: center top;
     display: block;
+  }
+
+  &__avatar-status {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 15px;
+    height: 15px;
+    background-color: #10b981;
+    outline: 4px solid #ffffff;
+    border-radius: 50%;
   }
 
   &__highlight {
@@ -253,13 +296,16 @@
     font-weight: 900;
   }
 
-  // Botones de Redes Sociales y Acción
+  // Botones en la parte de abajo
   &__socials {
     display: flex;
     gap: 14px;
     align-items: center;
+    width: 100%;
+    padding-top: 22px;
+    border-top: 1px solid #f3f4f6;
 
-    @media (max-width: 640px) {
+    @media (max-width: 580px) {
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
@@ -268,8 +314,8 @@
 
   &__social-btn {
     border-radius: 14px;
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +326,7 @@
       box-shadow 0.2s ease;
 
     &:hover {
-      transform: scale(1.12) translateY(-2px);
+      transform: scale(1.08) translateY(-2px);
     }
 
     &--github {
@@ -305,27 +351,33 @@
       }
     }
 
-    // Botón especial extendido para Descargar CV
+    // Botón Descargar CV (negro con icono naranja)
     &--cv {
       width: auto;
-      min-height: 52px;
-      padding: 0 20px;
-      gap: 8px;
-      background-color: #fef3c7;
-      color: #b45309;
+      min-height: 48px;
+      height: 48px;
+      padding: 0 24px;
+      gap: 10px;
+      background-color: #18181b;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 700;
+      font-family: var(--font-family-body);
       white-space: nowrap;
+      border: 2px solid #18181b;
 
       svg {
+        color: #fb923c;
+        stroke: #fb923c;
         flex-shrink: 0;
         transition: transform 0.2s ease;
       }
 
       &:hover {
-        background-color: #fde68a;
-        color: #92400e;
-        box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+        background-color: #27272a;
+        color: #ffffff;
+        border-color: #27272a;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 
         svg {
           transform: translateY(2px);
@@ -334,6 +386,7 @@
 
       @media (max-width: 480px) {
         width: 100%;
+        justify-content: center;
       }
     }
   }

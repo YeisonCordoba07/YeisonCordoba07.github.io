@@ -51,23 +51,36 @@
     <div class="footer__author">
       <div class="footer__avatar-wrapper">
         <img src="assets/Yo.webp" alt="Foto de Yeison Cordoba" class="footer__avatar" />
+        <span class="footer__avatar-status" title="Disponible para trabajar"></span>
       </div>
 
       <div class="footer__author-info">
-        <span class="footer__author-subtitle">
-          Hecho con <span class="footer__highlight">Angular</span> por
-        </span>
-        <h4 class="footer__author-name">Yeison Cordoba</h4>
-        <span class="footer__author-role">Desarrollador Web & Ingeniero de Sistemas</span>
+        <!-- Fila: Nombre + Badge Junior -->
+        <div class="footer__author-name-row">
+          <h4 class="footer__author-name">Yeison Cordoba</h4>
+          <span class="footer__author-badge">Junior</span>
+        </div>
+        <!-- Rol / Subtítulo -->
+        <span class="footer__author-role">Ingeniero de Sistemas & Desarrollador Full Stack</span>
+        <!-- Ubicación y disponibilidad -->
+        <div class="footer__author-meta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 11m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+          <span>Medellin, Colombia · Disponible para trabajar</span>
+        </div>
       </div>
     </div>
 
-    <!-- Botones de Redes Sociales y Acción -->
+    <!-- Botones en la parte de abajo: GitHub, LinkedIn y Descargar CV -->
     <div class="footer__socials">
       <!-- GitHub -->
       <a href="https://github.com/YeisonCordoba07" target="_blank" rel="noopener noreferrer"
         class="footer__social-btn footer__social-btn--github" title="GitHub de Yeison Cordoba">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="currentColor"
             d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
         </svg>
@@ -76,56 +89,26 @@
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/yeisoncordoba07" target="_blank" rel="noopener noreferrer"
         class="footer__social-btn footer__social-btn--linkedin" title="LinkedIn de Yeison Cordoba">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path
             d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
         </svg>
       </a>
 
-      <!-- Botón Descargar CV (más largo con icono y texto) -->
+      <!-- Descargar CV -->
       <a href="https://drive.google.com/drive/folders/1DUXIt6nre4LOYQ3DbXOF0yJDcuLgOgfJ" target="_blank"
         rel="noopener noreferrer" class="footer__social-btn footer__social-btn--cv" title="Descargar Curriculum Vitae">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-          <path d="M7 11l5 5l5 -5" />
-          <path d="M12 4l0 12" />
+          <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+          <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+          <path d="M12 11v6" />
+          <path d="M9.5 15.5l2.5 2.5l2.5 -2.5" />
         </svg>
         <span>Descargar CV</span>
       </a>
-
-      <!-- Botón Sitio Web (Comentado porque redirige al propio sitio)
-      <a
-        href="https://yeisoncordoba07.github.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="footer__social-btn footer__social-btn--portfolio"
-        title="Sitio Web Personal de Yeison Cordoba"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="26"
-          height="26"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M20.94 13.045a9 9 0 1 0 -8.953 7.955" />
-          <path d="M3.6 9h16.8" />
-          <path d="M3.6 15h9.4" />
-          <path d="M11.5 3a17 17 0 0 0 0 18" />
-          <path d="M12.5 3a16.991 16.991 0 0 1 2.529 10.294" />
-          <path d="M16 22l5 -5" />
-          <path d="M21 21.5v-4.5h-4.5" />
-        </svg>
-      </a>
-      -->
     </div>
   </aside>
 

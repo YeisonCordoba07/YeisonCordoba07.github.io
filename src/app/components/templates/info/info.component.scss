@@ -172,29 +172,49 @@ section {
 
 
 
-    .profile__cv-a{
-        padding: 10px 20px;
-        border-radius: 25px;
+    .profile__cv-a {
+        padding: 12px 24px;
+        border-radius: 16px;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 10px;
 
-        font-size: 23px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 500;
         font-family: var(--font-family);
         text-decoration: none;
         position: relative;
 
-        transition-duration: 150ms;
+        transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
         cursor: pointer;
-        background-color: var(--profile-background-color-cv-button);
-        color: var(--profile-text-color-cv-button);
-    }
-    .profile__cv-a:hover{
-        transform: scale(1.07);
-        background-color: var(--profile-background-color-cv-button-hover);
+        background-color: #111827;
+        color: #ffffff;
+
+
+        svg {
+            color: #fb923c;
+            stroke: #fb923c;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        p {
+            margin: 0;
+            color: #ffffff;
+            line-height: 1;
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-2px);
+            background-color: #1f2937;
+            //box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+
+            svg {
+                transform: translateY(2px);
+            }
+        }
     }
 
 
