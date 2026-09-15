@@ -326,30 +326,41 @@
       box-shadow 0.2s ease;
 
     &:hover {
-      transform: scale(1.08) translateY(-2px);
+      transform: scale(1.08);
     }
 
     &--github {
-      background-color: #e0f2fe;
-      color: #0284c7;
+      background-color: #BAE6FD;
+      color: #0369A1;
 
       &:hover {
-        background-color: #bae6fd;
-        color: #0369a1;
-        box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+        background-color: #B4DCF5;
+        color: #075985;
+          box-shadow: 0 4px 14px rgba(3, 105, 161, 0.22);
       }
     }
 
     &--linkedin {
-      background-color: #ecfccb;
-      color: #65a30d;
+      background-color: #FDE68A;
+      color: #B45309;
 
       &:hover {
-        background-color: #d9f99d;
-        color: #4d7c0f;
-        box-shadow: 0 4px 14px rgba(101, 163, 13, 0.3);
+        background-color: #FCD34D;
+        color: #92400E;
+          box-shadow: 0 4px 14px rgba(251, 108, 1, 0.32);
       }
     }
+
+      &--whatsapp {
+          background-color: #D9F99D;
+          color: #4D7C0F;
+
+          &:hover {
+              background-color: #C6F477;
+              color: #3F6212;
+              box-shadow: 0 4px 14px rgba(77, 124, 15, 0.32);
+          }
+      }
 
     // Botón Descargar CV (negro con icono naranja)
     &--cv {
@@ -358,30 +369,25 @@
       height: 48px;
       padding: 0 24px;
       gap: 10px;
-      background-color: #18181b;
-      color: #ffffff;
+      background-color: #FDE68A;
+      color: #B45309;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
       font-family: var(--font-family-body);
       white-space: nowrap;
-      border: 2px solid #18181b;
+      border: 2px dotted #B45309;
 
       svg {
-        color: #fb923c;
-        stroke: #fb923c;
+
         flex-shrink: 0;
         transition: transform 0.2s ease;
       }
 
       &:hover {
         background-color: #27272a;
-        color: #ffffff;
+        color: oklch(82.8% 0.189 84.429);
         border-color: #27272a;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-
-        svg {
-          transform: translateY(2px);
-        }
       }
 
       @media (max-width: 480px) {
