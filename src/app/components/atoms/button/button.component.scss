@@ -1,32 +1,35 @@
-  .button{
-        display: flex;
-        padding: 10px 20px;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+.button {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
-        width: fit-content;
-        height: 50px;
+    height: 45px;
+    width: 100%;
 
-        transition: transform 0.2s;
-        border: none;
-        cursor: pointer;
-        background: var(--button-background);
-    }
+    transition: transform 0.2s;
+    border: none;
+    cursor: pointer;
+    background: var(--button-background);
+    box-shadow: var(--button-shadow);
+}
 
-    .button:hover{
-        transform: scale(1.1);
-    }
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: var(--button-shadow-hover);
 
-    .button__icon{
-        width: 30px;
-        height: 30px;
-    }
+}
 
-    .button__text{
-        font-size: var(--button-font-size);
-        font-family: var(--font-family);
-        color: var(--button-text-color);
-        font-weight: 500;
-    }
+.button__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.button__text {
+    font-size: var(--button-font-size);
+    font-family: var(--font-family);
+    color: var(--button-text-color);
+    font-weight: 500;
+}
