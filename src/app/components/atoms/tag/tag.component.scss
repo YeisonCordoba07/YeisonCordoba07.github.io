@@ -1,18 +1,272 @@
 .tag {
-  display: flex;
-  justify-content: center;
-  width: fit-content;
-  align-items: center;
-  gap: 10px;
-  padding: 7px 10px;
-  border-radius: 5px;
-  //border: 1px solid var(--tag-border-color);
-  //background: var(--tag-background);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    //border: 1px solid var(--tag-border-color);
+    //background: var(--tag-background);
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+
+    &__name {
+        transition: color 0.2s ease;
+
+        font-size: 14px;
+        font-family: fredoka, nunito, serif;
+        font-weight: 500;
+        color: var(--tag-text-color);
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
 }
 
-.tag__name {
-  font-size: 14px;
-  font-family: fredoka, nunito, serif;
-  font-weight: 500;
-  color: var(--tag-text-color);
+/* ============================================================
+   LIGHT THEME
+   ============================================================ */
+
+/* Angular */
+.tag[data-technology='Angular'] {
+    background-color: #ffe5e7;
+
+    .tag__name {
+        color: #c62828;
+    }
+}
+
+/* TypeScript */
+.tag[data-technology='TypeScript'] {
+    background-color: #dcebff;
+
+    .tag__name {
+        color: #1565c0;
+    }
+}
+
+/* JavaScript */
+.tag[data-technology='JavaScript'] {
+    background-color: #fff6cc;
+
+    .tag__name {
+        color: #8a6d00;
+    }
+}
+
+/* Java */
+.tag[data-technology='Java'] {
+    background-color: #fbe9e0;
+
+    .tag__name {
+        color: #b5441b;
+    }
+}
+
+/* Spring */
+.tag[data-technology='Spring'] {
+    background-color: #e5f5d8;
+
+    .tag__name {
+        color: #3d7a16;
+    }
+}
+
+/* MySQL */
+.tag[data-technology='MySQL'] {
+    background-color: #ddf3fa;
+
+    .tag__name {
+        color: #006080;
+    }
+}
+
+/* MongoDB */
+.tag[data-technology='MongoDB'] {
+    background-color: #e1f5e7;
+
+    .tag__name {
+        color: #287a3e;
+    }
+}
+
+/* React */
+.tag[data-technology='React'] {
+    background-color: #ddf8fc;
+
+    .tag__name {
+        color: #087e8b;
+    }
+}
+
+/* NextJS */
+.tag[data-technology='NextJS'] {
+    background-color: #e9e9e9;
+
+    .tag__name {
+        color: #222222;
+    }
+}
+
+/* SCSS */
+.tag[data-technology='SCSS'] {
+    background-color: #f8dde9;
+
+    .tag__name {
+        color: #a83268;
+    }
+}
+
+/* HTML */
+.tag[data-technology='HTML'] {
+    background-color: #ffe3d8;
+
+    .tag__name {
+        color: #c43d18;
+    }
+}
+
+/* CSS */
+.tag[data-technology='CSS'] {
+    background-color: #e8ddf8;
+
+    .tag__name {
+        color: #663399;
+    }
+}
+
+
+/* ============================================================
+   DARK THEME
+   ============================================================ */
+
+:host-context([data-theme='dark']) {
+
+    /* Angular */
+    .tag[data-technology='Angular'] {
+        background-color: rgba(221, 0, 49, 0.15);
+        border-color: rgba(221, 0, 49, 0.4);
+
+        .tag__name {
+            color: #f87171;
+        }
+    }
+
+    /* TypeScript */
+    .tag[data-technology='TypeScript'] {
+        background-color: rgba(49, 120, 198, 0.2);
+        border-color: rgba(49, 120, 198, 0.7);
+
+        .tag__name {
+            color: #60a5fa;
+        }
+    }
+
+    /* JavaScript */
+    .tag[data-technology='JavaScript'] {
+        background-color:  rgba(247, 223, 30, 0.15);
+        border-color: rgba(247, 223, 30, 0.35);
+
+        .tag__name {
+            color: #facc15;
+        }
+    }
+
+    /* Java */
+    .tag[data-technology='Java'] {
+        background-color: rgba(248, 152, 32, 0.15);
+        border-color: rgba(248, 152, 32, 0.4);
+
+        .tag__name {
+            color: #fb923c;
+        }
+    }
+
+    /* Spring */
+    .tag[data-technology='Spring'] {
+        background-color: rgba(109, 179, 63, 0.15);
+        border-color: rgba(109, 179, 63, 0.4);
+
+        .tag__name {
+            color: #4ade80;
+        }
+    }
+
+    /* MySQL */
+    .tag[data-technology='MySQL'] {
+        background-color: rgba(0, 117, 143, 0.15);
+        border-color: rgba(0, 117, 143, 0.4);
+
+        .tag__name {
+            color: #38bdf8;
+        }
+    }
+
+    /* MongoDB */
+    .tag[data-technology='MongoDB'] {
+        background-color:  rgba(71, 162, 72, 0.15);
+        border-color: rgba(71, 162, 72, 0.4);
+
+        .tag__name {
+            color: #34d399;
+        }
+    }
+
+    /* React */
+    .tag[data-technology='React'] {
+        background-color: rgba(97, 218, 251, 0.15);
+        border-color: rgba(97, 218, 251, 0.35);
+
+        .tag__name {
+            color: #61dafb;
+        }
+    }
+
+    /* NextJS */
+    .tag[data-technology='NextJS'] {
+        background-color: rgba(241, 245, 249, 0.15);
+        border-color: rgba(241, 245, 249, 0.25);
+
+        .tag__name {
+            color: #f1f5f9;
+        }
+    }
+
+    /* SCSS */
+    .tag[data-technology='SCSS'] {
+        background-color: rgba(205, 103, 153, 0.15);
+        border-color: rgba(205, 103, 153, 0.4);
+
+        .tag__name {
+            color: #f472b6;
+        }
+    }
+
+    /* HTML */
+    .tag[data-technology='HTML'] {
+        background-color: rgba(196, 61, 24, 0.2);
+        border-color: rgba(196, 61, 24, 0.4);
+
+        .tag__name {
+            color: #fb923c;
+        }
+    }
+
+    /* CSS */
+    .tag[data-technology='CSS'] {
+        background-color: rgba(192, 132, 252, 0.2);
+        border-color: rgba(192, 132, 252, 0.4);
+
+        .tag__name {
+            color: #c084fc;
+        }
+    }
 }

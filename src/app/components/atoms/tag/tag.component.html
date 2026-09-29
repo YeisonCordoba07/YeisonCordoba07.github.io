@@ -1,8 +1,13 @@
-<div class="tag"
-     [style.background-color]="colors.background"
-    >
-  <img [src]="src" [alt]="tagName + ' icon'"/>
+<div
+    class="tag"
+    [attr.data-technology]="tagName"
+>
+    <img
+        [src]="src"
+        [alt]="tagName + '-icon'"
+    />
 
-  <span class="tag__name"  [style.color]="colors.text">{{tagName}}</span>
-
+    <span class="tag__name">
+    {{ tagName }}
+  </span>
 </div>
