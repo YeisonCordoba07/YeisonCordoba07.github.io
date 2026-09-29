@@ -28,7 +28,9 @@
     --button-background: #202020;
     --button-text-color: white;
     --button-font-family: 'Roboto', sans-serif;
-    --button-font-size: 20px;
+    --button-font-size: 18px;
+
+
 
 
     /* -------------------- Card Project -------------------- */
@@ -150,6 +152,31 @@
 
     /* -------------------- Footer -------------------- */
     --footer-background:  #171717;
+
+    --footer-author-background: #ffffff;
+    --footer-text-color: #18181b;
+    --footer-badge-text-color: #7c3aed;
+    --footer-badge-background-color: #ede9fe;
+    --footer-badge-border-color: #c4b5fd;
+
+    --footer-role-text-color: #374151;
+    --footer-location-text-color:  #6b7280;
+    --footer-image-background: #fb923c;
+
+    --footer-card-border: none;
+
+    --footer-author-shadow: 0px 0px 30px -5px rgba(253, 187, 116, 0.75),
+    0px 0px 60px 0px rgba(255, 237, 213, 0.35);
+    --footer-author-shadow-hover: 0px 0px 35px -3px rgba(253, 187, 116, 0.9),
+    0px 0px 70px 0px rgba(255, 237, 213, 0.45);
+
+    --footer-cv-border: 2px dotted #B45309;
+    --footer-cv-background-color: #FDE68A;
+    --footer-cv-text-color: #B45309;
+
+    --footer-cv-border-hover: 2px dotted  #27272a;
+    --footer-cv-background-color-hover: #27272a;
+    --footer-cv-text-color-hover: oklch(82.8% 0.189 84.429);
 }
 
 
@@ -168,8 +195,11 @@
 
 
     /* -------------------- Buttons -------------------- */
-    --button-background: #000000;
+    --button-background: linear-gradient(90deg, #3a9cfe 0%, #0070f3 100%);
     --button-text-color: #ffffff;
+    --button-shadow:  0 0 20px rgba(0, 210, 255, 0.15);
+    --button-shadow-hover: 0 0 28px rgba(0, 210, 255, 0.3),
+    0 6px 18px rgba(0, 112, 243, 0.1);
 
     --card-project-image-gradient: linear-gradient(
             45deg,
@@ -266,6 +296,34 @@
     /* -------------------- Footer -------------------- */
     --footer-background: #090808;
 
+    --footer-author-background: linear-gradient(150deg, #291d4e 0%, #241a46 50%, #0f0b1d 100%);
+    --footer-text-color: #ffffff;
+    --footer-badge-text-color: #ae58ff;
+    --footer-badge-background-color: rgba(168, 85, 247, 0.38);
+    --footer-badge-border-color: rgba(168, 85, 247, 0.65);
+
+    --footer-role-text-color: #c8cdd5;
+    --footer-location-text-color: #959fb1;
+    --footer-image-background: #fb923c;
+
+    --footer-card-border: 1px solid rgba(168, 85, 247, 0.28);
+
+    --footer-author-shadow:
+        0px 0px 30px -5px rgba(168, 85, 247, 0.65),
+        0px 0px 60px 0px rgba(126, 34, 206, 0.30);
+    --footer-author-shadow-hover:
+        0px 0px 35px -3px rgba(192, 132, 252, 0.85),
+        0px 0px 75px 5px rgba(147, 51, 234, 0.45);
+
+
+    --footer-cv-border: 2px dotted #f59e0b;
+    --footer-cv-background-color: #764a01;
+    --footer-cv-text-color: #fbbf24;
+
+    --footer-cv-border-hover: 2px dotted #7e22ce;
+    --footer-cv-background-color-hover: #d2a8ff;
+    --footer-cv-text-color-hover: #7e22ce;
+
 }
 
 
@@ -302,6 +360,11 @@
 
 .social__icons:hover {
     transform: scale(1.15);
+}
+
+.sombra_sutil {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 
