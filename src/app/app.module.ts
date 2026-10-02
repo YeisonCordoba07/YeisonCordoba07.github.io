@@ -15,6 +15,12 @@ import {NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './components/templates/footer/footer.component';
 import {ButtonComponent} from "./components/atoms/button/button.component";
 import { KnowledgeCardComponent } from './components/atoms/knowledge-card/knowledge-card.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import {RouterOutlet} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+import { LeftArrowButtonComponent } from '@components/atoms/left-arrow-button/left-arrow-button.component';
+import { RightArrowButtonComponent } from '@components/atoms/right-arrow-button/right-arrow-button.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +35,18 @@ import { KnowledgeCardComponent } from './components/atoms/knowledge-card/knowle
     TooltipComponent,
     TagComponent,
     FooterComponent,
-    KnowledgeCardComponent
+    KnowledgeCardComponent,
+    HomeComponent,
+    ProyectosComponent,
+    LeftArrowButtonComponent,
+    RightArrowButtonComponent
   ],
-  imports: [
-    BrowserModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        BrowserModule,
+        NgOptimizedImage,
+        RouterOutlet,
+        AppRoutingModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

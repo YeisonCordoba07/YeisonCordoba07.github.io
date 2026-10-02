@@ -1,0 +1,143 @@
+
+<div class="proyecto">
+    <section >
+
+        <button  [routerLink]="'/'">volver a proyectos</button>
+        <div class="header">
+
+            <div class="header__info-container">
+                <h1 class="header__title">UdeA Food</h1>
+                <span class="header__subtitle">Plataforma de pedidos de comida para la UdeA</span>
+                <p class="header__description">UdeAFood permite a los estudiantes y trbajadores de la Universidad de Antioquia pedir comida en linea de diferentes tiendas del campus. La plataforma facilita la gestion de productos, pedidos y tiendas de manera eficiente.</p>
+
+                <div class="header__buttons-container">
+                    <app-button>
+            <span class="card-project__arrow">
+              Ver
+              <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  height="23"
+                  width="23"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </span>
+                    </app-button>
+
+                    <app-button src="assets/svg/github-black.svg">Frontend</app-button>
+
+                    <app-button src="assets/svg/github-black.svg">Backend</app-button>
+                </div>
+            </div>
+
+            <figure class="header__image-container">
+                <img ngSrc="assets/Yo2.jpg" alt="" fill priority class="header__image">
+            </figure>
+
+        </div>
+
+
+
+
+
+        <hr/>
+
+
+
+
+
+        <!-- tecnologias -->
+        <div class="technologies">
+            <h2 class="project__title">Tecnologias</h2>
+            <div class="technologies__tags">
+                <app-tag
+                    tagName="Angular"
+                    src="assets/svg/angular18.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="TypeScript"
+                    src="assets/svg/typescript.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="JavaScript"
+                    src="assets/svg/javascript.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="Java"
+                    src="assets/svg/java.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="Spring"
+                    src="assets/svg/spring.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="MySQL"
+                    src="assets/svg/mysql.svg"
+                ></app-tag>
+                <app-tag
+                    tagName="MongoDB"
+                    src="assets/svg/mongodb.svg"
+                ></app-tag>
+            </div>
+
+        </div>
+
+
+
+
+        <hr/>
+
+
+
+
+
+        <!-- fotos -->
+
+        <div class="gallery">
+            <h2 class="project__title">Fotos</h2>
+            <ul class="gallery__list">
+                <li *ngFor="let im of images; let i = index">
+                    <button class="gallery__button " (click)="openVisor(i)">
+                        <img [ngSrc]="im"  class="gallery__image " fill/>
+                    </button>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <!-- nav -->
+        <div></div>
+
+
+
+
+
+
+    </section>
+
+    <div class="visor" *ngIf="showImage" (click)="closeVisor()">
+        <div class="visor__background" (click)="$event.stopPropagation()">
+            <app-left-arrow-button class="visor__left" (onClick)="previousImage()"></app-left-arrow-button>
+            <app-right-arrow-button class="visor__right" (onClick)="nextImage()"></app-right-arrow-button>
+
+            <figure class="visor__figure">
+                <img class="visor__image" [src]="images[selectedImage]" alt="">
+
+            </figure>
+
+        </div>
+
+    </div>
+
+</div>
