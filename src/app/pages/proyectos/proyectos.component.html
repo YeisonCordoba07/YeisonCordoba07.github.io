@@ -131,8 +131,9 @@
             <app-left-arrow-button class="visor__left" (onClick)="previousImage()"></app-left-arrow-button>
             <app-right-arrow-button class="visor__right" (onClick)="nextImage()"></app-right-arrow-button>
 
-            <figure class="visor__figure">
-                <img class="visor__image" [src]="images[selectedImage]" alt="">
+            <figure class="visor__figure" (wheel)="onZoomScroll($event)">
+                <img class="visor__image" [src]="images[selectedImage]" alt=""
+                     [style.transform]="'scale(' + zoomScale + ')'">
 
             </figure>
 
