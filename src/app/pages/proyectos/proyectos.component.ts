@@ -111,4 +111,15 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     resetZoom() {
         this.zoomScale = 1;
     }
+
+
+
+
+    previousProject() {
+
+    }
+
+    nextPrevious() {
+
+    }
 }

@@ -96,6 +96,37 @@
         <hr/>
 
 
+        <div class="project-nav">
+
+            <a class="project-nav__button project-nav__button--left" (click)="previousProject()">
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+
+                <div class="project-nav__text project-nav__text--left">
+                    <span class="project-nav__title">PROYECTO ANTERIOR</span>
+                    <span class="project-nav__name">Disney plus</span>
+                </div>
+            </a>
+
+
+            <!-- HOME -->
+            <a class="project-nav__button project-nav__button--home" routerLink="/">
+                <svg class="project-nav__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M19 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M19 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /></svg>
+            </a>
+
+
+            <a class="project-nav__button project-nav__button--right" (click)="nextPrevious()">
+                <div class="project-nav__text project-nav__text--right">
+                    <span class="project-nav__title">PROYECTO SIGUIENTE</span>
+                    <span class="project-nav__name">Correos</span>
+                </div>
+
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+            </a>
+
+
+        </div>
+
+
 
 
 
@@ -117,7 +148,7 @@
 
 
         <!-- nav -->
-        <div></div>
+
 
 
 
