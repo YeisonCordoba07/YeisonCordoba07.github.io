@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-proyectos',
@@ -11,13 +11,34 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     zoomScale: number = 1;
 
     images = [
-        'https://picsum.photos/1200/700',
-        'https://picsum.photos/1200/800',
+        'https://picsum.photos/4096/2160 ',
+        'https://picsum.photos/2048/1080',
+        'https://picsum.photos/1900/1080',
         'https://picsum.photos/500/500',
         'https://picsum.photos/200/700',
-        'https://picsum.photos/1900/1080',
         'https://picsum.photos/200/300',
     ]
+
+
+    @HostListener('window:keydown', ['$event'])
+    handleKeyboardEvent(event: KeyboardEvent) {
+        if (!this.showImage) {
+            return;
+        }
+
+        switch (event.key) {
+            case 'Escape':
+                this.closeVisor();
+                break;
+            case 'ArrowRight':
+                this.nextImage();
+                break;
+            case 'ArrowLeft':
+                this.previousImage();
+                break;
+        }
+    }
+
 
   constructor() { }
 
@@ -29,7 +50,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     openVisor(index: number ) {
         this.showImage = true;
         this.selectedImage = index;
-
+        this.resetZoom();
         document.body.classList.add('no-scroll');
 
     }
@@ -39,6 +60,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
         this.resetZoom();
         document.body.classList.remove('no-scroll');
     }
+
 
     previousImage() {
         if (this.selectedImage !== -1) {
@@ -62,15 +84,27 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     onZoomScroll($event: WheelEvent) {
         $event.preventDefault();
 
-        const zoomStep = 0.1;
+        const zoomStep = 0.2;
         if ($event.deltaY < 0) {
-            if (this.zoomScale < 3) {
+            if (this.zoomScale < 5) {
                 this.zoomScale += zoomStep;
             }
         } else {
             if (this.zoomScale > 0.5) {
                 this.zoomScale -= zoomStep;
             }
+        }
+    }
+
+    zoomIn() {
+        if (this.zoomScale < 5) {
+            this.zoomScale += 0.25;
+        }
+    }
+
+    zoomOut() {
+        if (this.zoomScale > 0.5) {
+            this.zoomScale -= 0.25;
         }
     }
 

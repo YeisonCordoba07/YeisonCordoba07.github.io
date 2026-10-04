@@ -128,6 +128,8 @@
 
     <div class="visor" *ngIf="showImage" (click)="closeVisor()">
         <div class="visor__background" (click)="$event.stopPropagation()">
+            <button class="visor__close-btn" (click)="closeVisor()">✕</button>
+
             <app-left-arrow-button class="visor__left" (onClick)="previousImage()"></app-left-arrow-button>
             <app-right-arrow-button class="visor__right" (onClick)="nextImage()"></app-right-arrow-button>
 
@@ -136,6 +138,12 @@
                      [style.transform]="'scale(' + zoomScale + ')'">
 
             </figure>
+
+            <div class="visor__controls">
+                <button (click)="zoomOut()" [disabled]="zoomScale <= 0.5">-</button>
+                <span class="visor__zoom-percentage">{{ (zoomScale * 100) | number:'1.0-0' }}%</span>
+                <button (click)="zoomIn()" [disabled]="zoomScale >= 3">+</button>
+            </div>
 
         </div>
 
