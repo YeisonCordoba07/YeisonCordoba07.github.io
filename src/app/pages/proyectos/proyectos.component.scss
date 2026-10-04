@@ -363,3 +363,73 @@ section {
 }
 
 
+// ── Project link buttons (inspired by info component social buttons) ──
+.project-link-btn {
+    border-radius: 16px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: var(--font-family-body);
+    padding: 0 24px;
+    gap: 8px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05),
+        0 1px 2px rgba(0, 0, 0, 0.04);
+
+    svg {
+        flex-shrink: 0;
+        transition: transform 0.2s ease;
+    }
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    // "Ver proyecto" – gradient like the CV button
+    &--deploy {
+        background: var(--social-icons-background-color-cv);
+        color: var(--social-icons-color-cv);
+        white-space: nowrap;
+
+        &:hover {
+            background: black;
+            color: #22d3ee;
+            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+        }
+    }
+
+    // "Frontend" – like the GitHub button
+    &--github {
+        background-color: var(--social-icons-background);
+        color: var(--social-icons-color-github);
+
+        &:hover {
+            background-color: #B4DCF5;
+            color: #075985;
+            box-shadow: 0 4px 14px rgba(3, 105, 161, 0.22);
+        }
+    }
+
+    // "Backend" – green tones like the WhatsApp button
+    &--backend {
+        background-color: var(--social-icons-background);
+        color: #22C55E;
+
+        &:hover {
+            background-color: #C6F477;
+            color: #3F6212;
+            box-shadow: 0 4px 14px rgba(77, 124, 15, 0.32);
+        }
+    }
+}

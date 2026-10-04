@@ -1,14 +1,14 @@
-import {Component, HostListener, inject, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import { Component, HostListener, inject, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-proyectos',
-  templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.scss']
+    selector: 'app-proyectos',
+    templateUrl: './proyectos.component.html',
+    styleUrls: ['./proyectos.component.scss']
 })
 export class ProyectosComponent implements OnInit, OnDestroy {
     showImage: boolean = false;
-    selectedImage: number  = -1;
+    selectedImage: number = -1;
     zoomScale: number = 1;
     indexProject: string | null = null;
 
@@ -45,23 +45,23 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     }
 
 
-  constructor() {
-      this.indexProject = this.route.snapshot.paramMap.get('indexProject');
-  }
+    constructor() {
+        this.indexProject = this.route.snapshot.paramMap.get('indexProject');
+    }
 
-  ngOnInit(): void {
+    ngOnInit(): void {
 
-      //window.scrollTo(0, 0);
-  }
+        //window.scrollTo(0, 0);
+    }
 
-    openVisor(index: number ) {
+    openVisor(index: number) {
         this.showImage = true;
         this.selectedImage = index;
         this.resetZoom();
         document.body.classList.add('no-scroll');
 
     }
-    closeVisor(){
+    closeVisor() {
         this.showImage = false;
         this.selectedImage = -1;
         this.resetZoom();

@@ -1,35 +1,26 @@
-
 <div class="proyecto">
-    <section >
+    <section>
 
-        <button  [routerLink]="'/'">volver a proyectos</button>
+        <button [routerLink]="'/'">volver a proyectos</button>
         <div class="header">
 
             <div class="header__info-container">
                 <h1 class="header__title">UdeA Food</h1>
                 <span class="header__subtitle">Plataforma de pedidos de comida para la UdeA</span>
-                <p class="header__description">UdeAFood permite a los estudiantes y trbajadores de la Universidad de Antioquia pedir comida en linea de diferentes tiendas del campus. La plataforma facilita la gestion de productos, pedidos y tiendas de manera eficiente.</p>
+                <p class="header__description">UdeAFood permite a los estudiantes y trbajadores de la Universidad de
+                    Antioquia pedir comida en linea de diferentes tiendas del campus. La plataforma facilita la gestion
+                    de productos, pedidos y tiendas de manera eficiente.</p>
 
                 <div class="header__buttons-container">
                     <app-button>
-            <span class="card-project__arrow">
-              Ver
-              <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  height="23"
-                  width="23"
-                  xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </span>
+                        <span class="card-project__arrow">
+                            Ver
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="23"
+                                width="23" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </span>
                     </app-button>
 
                     <app-button src="assets/svg/github-black.svg">Frontend</app-button>
@@ -46,7 +37,7 @@
 
 
 
-        <hr/>
+        <hr />
 
 
 
@@ -54,41 +45,20 @@
         <div class="technologies">
             <h2 class="project__title">Tecnologias</h2>
             <div class="technologies__tags">
-                <app-tag
-                    tagName="Angular"
-                    src="assets/svg/angular18.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="TypeScript"
-                    src="assets/svg/typescript.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="JavaScript"
-                    src="assets/svg/javascript.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="Java"
-                    src="assets/svg/java.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="Spring"
-                    src="assets/svg/spring.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="MySQL"
-                    src="assets/svg/mysql.svg"
-                ></app-tag>
-                <app-tag
-                    tagName="MongoDB"
-                    src="assets/svg/mongodb.svg"
-                ></app-tag>
+                <app-tag tagName="Angular" src="assets/svg/angular18.svg"></app-tag>
+                <app-tag tagName="TypeScript" src="assets/svg/typescript.svg"></app-tag>
+                <app-tag tagName="JavaScript" src="assets/svg/javascript.svg"></app-tag>
+                <app-tag tagName="Java" src="assets/svg/java.svg"></app-tag>
+                <app-tag tagName="Spring" src="assets/svg/spring.svg"></app-tag>
+                <app-tag tagName="MySQL" src="assets/svg/mysql.svg"></app-tag>
+                <app-tag tagName="MongoDB" src="assets/svg/mongodb.svg"></app-tag>
             </div>
 
         </div>
 
 
 
-        <hr/>
+        <hr />
 
 
 
@@ -99,7 +69,7 @@
             <ul class="gallery__list">
                 <li *ngFor="let im of images; let i = index">
                     <button class="gallery__button " (click)="openVisor(i)">
-                        <img [ngSrc]="im"  class="gallery__image " fill/>
+                        <img [ngSrc]="im" class="gallery__image " fill />
                     </button>
                 </li>
 
@@ -115,7 +85,14 @@
         <div class="project-nav">
 
             <a class="project-nav__button project-nav__button--left" (click)="previousProject()">
-                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M5 12l6 6" />
+                    <path d="M5 12l6 -6" />
+                </svg>
 
                 <div class="project-nav__text project-nav__text--left">
                     <span class="project-nav__title">PROYECTO ANTERIOR</span>
@@ -126,7 +103,14 @@
 
             <!-- HOME -->
             <a class="project-nav__button project-nav__button--home" routerLink="/">
-                <svg class="project-nav__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M19 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M19 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /></svg>
+                <svg class="project-nav__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M19 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M19 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                </svg>
             </a>
 
 
@@ -136,7 +120,14 @@
                     <span class="project-nav__name">Correos</span>
                 </div>
 
-                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                </svg>
             </a>
 
 
@@ -157,7 +148,7 @@
 
             <figure class="visor__figure" (wheel)="onZoomScroll($event)">
                 <img class="visor__image" [src]="images[selectedImage]" alt=""
-                     [style.transform]="'scale(' + zoomScale + ')'">
+                    [style.transform]="'scale(' + zoomScale + ')'">
 
             </figure>
 
