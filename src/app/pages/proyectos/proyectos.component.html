@@ -46,11 +46,7 @@
 
 
 
-
-
         <hr/>
-
-
 
 
 
@@ -92,10 +88,30 @@
 
 
 
-
         <hr/>
 
 
+
+        <!-- fotos -->
+
+        <div class="gallery">
+            <h2 class="project__title">Fotos</h2>
+            <ul class="gallery__list">
+                <li *ngFor="let im of images; let i = index">
+                    <button class="gallery__button " (click)="openVisor(i)">
+                        <img [ngSrc]="im"  class="gallery__image " fill/>
+                    </button>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <hr>
+
+
+        <!-- nav -->
         <div class="project-nav">
 
             <a class="project-nav__button project-nav__button--left" (click)="previousProject()">
@@ -126,36 +142,11 @@
 
         </div>
 
-
-
-
-
-        <!-- fotos -->
-
-        <div class="gallery">
-            <h2 class="project__title">Fotos</h2>
-            <ul class="gallery__list">
-                <li *ngFor="let im of images; let i = index">
-                    <button class="gallery__button " (click)="openVisor(i)">
-                        <img [ngSrc]="im"  class="gallery__image " fill/>
-                    </button>
-                </li>
-
-            </ul>
-
-
-        </div>
-
-
-        <!-- nav -->
-
-
-
-
-
-
-
     </section>
+
+
+
+
 
     <div class="visor" *ngIf="showImage" (click)="closeVisor()">
         <div class="visor__background" (click)="$event.stopPropagation()">

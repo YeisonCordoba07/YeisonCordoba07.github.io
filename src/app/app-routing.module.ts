@@ -11,7 +11,7 @@ const routes: Routes = [
         path: '', component: HomeComponent
     },
     {
-        path: 'proyectos/:nombre', component: ProyectosComponent
+        path: 'proyectos/:numberProject', component: ProyectosComponent
     }
 
 ];
