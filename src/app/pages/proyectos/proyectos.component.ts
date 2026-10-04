@@ -1,5 +1,10 @@
-import { Component, HostListener, inject, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import {ChangeDetectorRef, Component, HostListener, inject, OnDestroy, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
+
+import projectsData from "../../shared/contants/proyectos.json";
+import {Project} from "../../shared/contants/project.constants";
+import {TECHNOLOGY_MAP} from "../../shared/contants/tag.constants";
+import {Subscription} from "rxjs";
 
 @Component({
     selector: 'app-proyectos',
@@ -10,10 +15,14 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     showImage: boolean = false;
     selectedImage: number = -1;
     zoomScale: number = 1;
-    indexProject: string | null = null;
+    indexProject!: number;
+    urlSubscription!: Subscription;
 
 
-    private route = inject(ActivatedRoute);
+    projectsList: Project[] = projectsData as Project[];
+    project: Project | null = null;
+    techMapIcon = TECHNOLOGY_MAP;
+
 
     images = [
         'https://picsum.photos/4096/2160 ',
@@ -23,6 +32,37 @@ export class ProyectosComponent implements OnInit, OnDestroy {
         'https://picsum.photos/200/700',
         'https://picsum.photos/200/300',
     ]
+
+
+
+    private router = inject(Router);
+    private activatedRoute = inject(ActivatedRoute);
+    private cdr = inject(ChangeDetectorRef);
+
+
+    //--------------------------------------------------------
+
+    constructor() {
+
+    }
+
+
+    ngOnInit(): void {
+        this.urlSubscription = this.activatedRoute.params.subscribe((params) => {
+            const nuevoIndex = Number(params['indexProject']);
+
+            if (nuevoIndex > 0 && nuevoIndex < this.projectsList.length) {
+                this.indexProject = nuevoIndex;
+                this.project = this.projectsList[this.indexProject - 1];
+                this.cdr.detectChanges();
+            } else {
+                console.log('El índice del proyecto no es válido:', nuevoIndex);
+                // this.router.navigate(['/']);
+            }
+        });
+    }
+
+
 
 
     @HostListener('window:keydown', ['$event'])
@@ -45,15 +85,8 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     }
 
 
-    constructor() {
-        this.indexProject = this.route.snapshot.paramMap.get('indexProject');
-    }
 
-    ngOnInit(): void {
-
-        //window.scrollTo(0, 0);
-    }
-
+    //--------------------------------------------------------
     openVisor(index: number) {
         this.showImage = true;
         this.selectedImage = index;
@@ -61,6 +94,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
         document.body.classList.add('no-scroll');
 
     }
+
     closeVisor() {
         this.showImage = false;
         this.selectedImage = -1;
@@ -83,11 +117,9 @@ export class ProyectosComponent implements OnInit, OnDestroy {
         }
     }
 
-    ngOnDestroy(): void {
-        document.documentElement.classList.remove('no-scroll');
-        document.body.classList.remove('no-scroll');
-    }
 
+
+    //--------------------------------------------------------
     onZoomScroll($event: WheelEvent) {
         $event.preventDefault();
 
@@ -121,12 +153,26 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
 
 
-
+    //--------------------------------------------------------
     previousProject() {
-
+        if (this.indexProject > 1){
+            this.router.navigate(['/proyectos', this.indexProject - 1]);
+        }
     }
 
-    nextPrevious() {
+    nextProject() {
+        if (this.indexProject < this.projectsList.length - 1){
+            this.router.navigate(['/proyectos', Number(this.indexProject) + 1]);
+        }
+    }
 
+
+
+
+    //--------------------------------------------------------
+    ngOnDestroy(): void {
+        document.documentElement.classList.remove('no-scroll');
+        document.body.classList.remove('no-scroll');
+        this.urlSubscription.unsubscribe();
     }
 }
