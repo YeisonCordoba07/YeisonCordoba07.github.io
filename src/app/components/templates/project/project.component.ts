@@ -6,6 +6,7 @@ import {
   MASTERCLASS_DESCRIPTION, MERCADO_DESCRIPTION,
   UDEAFOOD_DESCRIPTION
 } from "../../../shared/contants/project.constants";
+import {TECHNOLOGY_MAP} from "../../../shared/contants/tag.constants";
 
 @Component({
   selector: 'app-project',
@@ -13,6 +14,8 @@ import {
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+
+    techMapIcon = TECHNOLOGY_MAP;
 
   constructor() { }
 

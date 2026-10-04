@@ -1,4 +1,5 @@
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, inject, OnDestroy, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-proyectos',
@@ -9,6 +10,10 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     showImage: boolean = false;
     selectedImage: number  = -1;
     zoomScale: number = 1;
+    indexProject: string | null = null;
+
+
+    private route = inject(ActivatedRoute);
 
     images = [
         'https://picsum.photos/4096/2160 ',
@@ -40,7 +45,9 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     }
 
 
-  constructor() { }
+  constructor() {
+      this.indexProject = this.route.snapshot.paramMap.get('indexProject');
+  }
 
   ngOnInit(): void {
 

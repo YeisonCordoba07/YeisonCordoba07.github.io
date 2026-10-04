@@ -1,5 +1,6 @@
 ## Variables proyectos
 - titulo url
+- numero url
 - titulo
 - subtitulo
 - descripcion
@@ -15,6 +16,7 @@
   - etc
 - fotos
   - imagen portada
+  - imagen home
   - imagen 1
   - imagen 2
   - imagen 3
