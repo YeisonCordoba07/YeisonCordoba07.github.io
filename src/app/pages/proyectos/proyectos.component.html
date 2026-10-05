@@ -21,7 +21,7 @@
                 <p class="header__description">{{ project?.descripcion }}</p>
 
                 <div class="header__buttons-container">
-                    <a class="project-link-btn--deploy project-link-btn">
+                    <a class="project-link-btn--deploy project-link-btn" [href]="project?.enlaces?.desplegado" *ngIf="project?.enlaces?.desplegado" target="_blank">
                         <span class="card-project__arrow">
                             Ver
                             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="23"
@@ -32,9 +32,9 @@
                         </span>
                     </a>
 
-                    <a class="project-link-btn--github project-link-btn">Frontend</a>
+                    <a class="project-link-btn--github project-link-btn" [href]="project?.enlaces?.frontend_github" *ngIf="project?.enlaces?.frontend_github" target="_blank">Frontend</a>
 
-                    <a class="project-link-btn--backend project-link-btn">Backend</a>
+                    <a class="project-link-btn--backend project-link-btn" [href]="project?.enlaces?.backend_github" *ngIf="project?.enlaces?.backend_github" target="_blank">Backend</a>
 
                 </div>
             </div>
@@ -46,7 +46,7 @@
 
 
 
-        <hr />
+
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-        <hr />
+
 
 
 
@@ -82,13 +82,14 @@
 
         </div>
 
-        <hr>
+
 
 
         <!-- nav -->
         <div class="project-nav">
 
-            <button class="project-nav__button project-nav__button--left" (click)="previousProject()">
+            <!-- NEXT PROJECT -->
+            <button class="project-nav__button project-nav__button--left" (click)="previousProject()" [disabled]="!hasPreviousProject()">
                 <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -118,7 +119,8 @@
             </a>
 
 
-            <button class="project-nav__button project-nav__button--right" (click)="nextProject()">
+            <!-- PREVIOUS PROJECT -->
+            <button class="project-nav__button project-nav__button--right" (click)="nextProject()" [disabled]="!hasNextProject()">
                 <div class="project-nav__text project-nav__text--right">
                     <span class="project-nav__title">PROYECTO SIGUIENTE</span>
                     <span class="project-nav__name">{{ generateNextNameProject()}}</span>
