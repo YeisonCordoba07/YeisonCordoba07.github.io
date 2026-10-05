@@ -6,8 +6,8 @@ import {Component, HostListener, OnInit} from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  savedTheme: string = localStorage.getItem('theme') || 'light';
-  currentTheme: string = this.savedTheme;
+
+    currentTheme: string = 'light';
 
   activeSection: string = 'inicio';
 
@@ -15,15 +15,15 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    document.documentElement.setAttribute('data-theme', this.savedTheme);
-    this.currentTheme = this.savedTheme;
+      this.currentTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', this.currentTheme);
   }
 
   changeTheme(): void {
-    const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    this.currentTheme = newTheme;
+      const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      this.currentTheme = newTheme;
   }
 
 

@@ -182,6 +182,30 @@
     --footer-cv-border-hover: 2px dotted  #27272a;
     --footer-cv-background-color-hover: #27272a;
     --footer-cv-text-color-hover: oklch(82.8% 0.189 84.429);
+
+
+
+
+    /* -------------------- Proyecto -------------------- */
+    --proyecto-header-background: linear-gradient(
+            45deg,
+            rgba(255, 165, 0, 0.45),
+            rgba(255, 222, 173, 1),
+            rgba(255, 179, 64, 0.45),
+
+            rgba(255, 222, 173, 1),
+            rgba(255, 165, 0, 0.45),
+            rgba(255, 165, 0, 0.55)
+    );
+
+    --proyecto-header-description-color: gray;
+    --proyecto-image-background-color: white;
+    --proyecto-general-background: white;
+    --proyecto-general-border-color: #e5e5e5;
+    --proyecto-navbar-title-color: black;
+
+
+
 }
 
 
@@ -328,6 +352,14 @@
     --footer-cv-border-hover: 2px dotted #7e22ce;
     --footer-cv-background-color-hover: #d2a8ff;
     --footer-cv-text-color-hover: #7e22ce;
+
+
+    --proyecto-header-background: var(--card-project-background-gradient);
+    --proyecto-header-description-color: var(--card-project-title);
+    --proyecto-image-background-color: rgba(0, 0, 0, 0.4);
+    --proyecto-general-background: rgb(63, 63, 63);
+    --proyecto-general-border-color: #464646;
+    --proyecto-navbar-title-color: var(--card-project-title);
 
 }
 

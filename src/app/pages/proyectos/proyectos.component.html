@@ -10,7 +10,9 @@
                 <path d="M5 12l6 6" />
                 <path d="M5 12l6 -6" />
             </svg>
-            Volver a proyectos</a>
+            Volver a proyectos
+        </a>
+
         <div class="header">
 
             <div class="header__info-container">
@@ -33,12 +35,12 @@
                     <a class="project-link-btn--github project-link-btn">Frontend</a>
 
                     <a class="project-link-btn--backend project-link-btn">Backend</a>
+
                 </div>
             </div>
 
-            <figure class="header__image-container">
-                <img [src]="project?.fotos?.imagen_portada ?? ''" alt=""   class="header__image" >
-            </figure>
+            <img class="header__image-container" [src]="project?.fotos?.imagen_portada ?? ''" alt="">
+
 
         </div>
 
@@ -98,7 +100,7 @@
 
                 <div class="project-nav__text project-nav__text--left">
                     <span class="project-nav__title">PROYECTO ANTERIOR</span>
-                    <span class="project-nav__name">{{ projectsList[indexProject - 1].titulo }}</span>
+                    <span class="project-nav__name">{{ generatePreviousNameProject() }}</span>
                 </div>
             </button>
 
@@ -119,7 +121,7 @@
             <button class="project-nav__button project-nav__button--right" (click)="nextProject()">
                 <div class="project-nav__text project-nav__text--right">
                     <span class="project-nav__title">PROYECTO SIGUIENTE</span>
-                    <span class="project-nav__name">{{ projectsList[indexProject + 1].titulo }}</span>
+                    <span class="project-nav__name">{{ generateNextNameProject()}}</span>
                 </div>
 
                 <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"

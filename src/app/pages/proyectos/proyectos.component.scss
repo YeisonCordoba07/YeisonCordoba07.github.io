@@ -22,6 +22,25 @@ section {
     display: flex;
     gap: 20px;
     align-items: stretch;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 50px;
+    background: var(--info-profile-gradient-background);
+    background: var(--proyecto-header-background);
+
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 
 
     &__info-container{
@@ -33,16 +52,19 @@ section {
     &__title{
         font-family: var(--font-family-secondary);
         font-weight: 800;
-        font-size: 40px;
+        font-size: 50px;
+        color: var(--card-project-title);
     }
     &__subtitle{
         font-family: var(--font-family-body);
         font-size: 18px;
         margin-bottom: 20px;
+        color: var(--card-project-title);
 
     }
     &__description{
         font-family: var(--font-family);
+        color: var(--proyecto-header-description-color);
     }
 
     &__buttons-container{
@@ -62,16 +84,15 @@ section {
         height: auto;
         overflow: hidden;
         position: relative;
-        border: 1px solid red;
         flex-shrink: 0;
-
-
-    }
-    &__image{
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.03), 0 0 20px 0px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        background-color: var(--proyecto-image-background-color);
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
         object-fit: contain;
-        width: 100%;
-        height: 100%;
-        position: absolute;
+
     }
 
 }
@@ -83,9 +104,16 @@ section {
     display: flex;
     flex-direction: column;
 
+
     &__tags{
         display: flex;
         gap: 10px;
+        background-color: var( --proyecto-general-background);
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.03), 0 0 20px 0px rgba(0, 0, 0, 0.05);
     }
 }
 
@@ -96,15 +124,19 @@ section {
     position: relative;
 
     &__list{
+        background-color: var( --proyecto-general-background);
         width: 100%;
         list-style: none;
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: 200px;
-        gap: 7px;
+        gap: 9px;
         margin: 0;
         padding: 0;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.03), 0 0 20px 0px rgba(0, 0, 0, 0.05);
+        padding: 25px 20px;
+        border-radius: 15px;
     }
 
     &__button{
@@ -257,8 +289,8 @@ section {
         justify-content: center;
         box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.03), 0 0 20px 0px rgba(0, 0, 0, 0.05);
         border-radius: 15px;
-        background-color: white;
-        border: 1px solid #e5e5e5;
+        background-color: var( --proyecto-general-background);
+        border: 1px solid var(--proyecto-general-border-color);
         gap: 20px;
         align-items: center;
         cursor: pointer;
@@ -307,6 +339,7 @@ section {
     }
     &__arrow{
         transition-duration: 150ms;
+        color: var(--proyecto-navbar-title-color);
 
         &:hover{
 
@@ -336,7 +369,7 @@ section {
         font-size: 15px;
         font-family: var(--font-family-body);
         font-weight: 600;
-        color: black;
+        color: var(--proyecto-navbar-title-color);
     }
 
 
@@ -350,6 +383,7 @@ section {
 
 .project__title{
     font-family: var(--font-family-body);
+    color: var(--card-project-title);
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
@@ -359,7 +393,7 @@ section {
 
 
 .card-project__arrow {
-    color: white;
+    color: var(--social-icons-color-cv);
     display: flex;
     gap: 15px;
     font-weight: 500;
@@ -391,14 +425,14 @@ section {
     }
 }
 .project-link-btn {
-    border-radius: 16px;
+    border-radius: 13px;
     width: fit-content;
     font-size: 16px;
     font-weight: 800;
     font-family: var(--font-family-body);
-    padding: 0 24px;
+    padding: 0 15px;
+    height: 40px;
     gap: 8px;
-    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,7 +5,7 @@
     "titulo": "UdeA Food",
     "subtitulo": "Plataforma de pedidos de comida para la UdeA",
     "descripcion": "Aplicación web inspirada en Rappi y Uber Eats, enfocada en las tiendas de la Universidad de Antioquia. Los usuarios pueden crear tiendas y gestionar productos, mientras los clientes exploran y compran.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "",
       "frontend_github": "1",
@@ -37,7 +37,7 @@
     "titulo": "Disney Plus",
     "subtitulo": "",
     "descripcion": "Réplica responsive de la página principal de Disney Plus hecha con React y NextJS. Incluye scroll horizontal y atomic design, adaptada a todo tipo de dispositivos, con enfoque en usabilidad.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "https://yeisoncordoba07-disney-plus-clone.vercel.app/",
       "frontend_github": "https://github.com/YeisonCordoba07/disney-plus-clone",
@@ -65,7 +65,7 @@
     "titulo": "Emason",
     "subtitulo": "",
     "descripcion": "Aplicación web para gestionar artículos de compra con marcas y categorías. Integra un sistema de roles con tres tipos de usuarios y permisos específicos.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "",
       "frontend_github": "https://github.com/orgs/BootcampPragma/repositories",
@@ -93,7 +93,7 @@
     "titulo": "Master Class",
     "subtitulo": "",
     "descripcion": "Réplica de la página web de MasterClass usando HTML y CSS. Proyecto centrado en practicar maquetación y fidelidad visual.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio4/",
       "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio4",
@@ -118,7 +118,7 @@
     "titulo": "Correos España",
     "subtitulo": "",
     "descripcion": "Recreación de la página web de Correos España con HTML y CSS. Ejercicio para fortalecer habilidades en diseño estático y organización visual.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio7/",
       "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio7",
@@ -141,7 +141,7 @@
     "titulo": "Mercado Libre",
     "subtitulo": "",
     "descripcion": "Clon de la página de Mercado Libre implementado con HTML y CSS. Proyecto enfocado en interfaces de comercio electrónico y disposición de productos.",
-    "año": 2024,
+    "fecha": 2024,
     "enlaces": {
       "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio8/",
       "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio8",

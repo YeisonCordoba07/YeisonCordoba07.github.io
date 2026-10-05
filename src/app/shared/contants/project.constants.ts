@@ -33,7 +33,7 @@ export interface Project {
     titulo: string;
     subtitulo: string;
     descripcion: string;
-    año: number;
+    fecha: number;
     enlaces: ProjectLinks;
     tecnologias: string[];
     fotos: ProjectFotos;

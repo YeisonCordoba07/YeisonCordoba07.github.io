@@ -51,10 +51,10 @@ export class ProyectosComponent implements OnInit, OnDestroy {
         this.urlSubscription = this.activatedRoute.params.subscribe((params) => {
             const nuevoIndex = Number(params['indexProject']);
 
-            if (nuevoIndex > 0 && nuevoIndex < this.projectsList.length) {
+            if (nuevoIndex > 0 && nuevoIndex <= this.projectsList.length) {
                 this.indexProject = nuevoIndex;
                 this.project = this.projectsList[this.indexProject - 1];
-                this.cdr.detectChanges();
+                //this.cdr.detectChanges();
             } else {
                 console.log('El índice del proyecto no es válido:', nuevoIndex);
                 // this.router.navigate(['/']);
@@ -161,9 +161,32 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     }
 
     nextProject() {
-        if (this.indexProject < this.projectsList.length - 1){
+        if (this.indexProject < this.projectsList.length){
             this.router.navigate(['/proyectos', Number(this.indexProject) + 1]);
         }
+    }
+
+    generateNextNameProject(){
+        if (this.hasNextProject()){
+            return this.projectsList[this.indexProject].titulo;
+        }
+        return '';
+    }
+
+    generatePreviousNameProject(){
+        if (this.hasPreviousProject()){
+            return this.projectsList[this.indexProject - 1].titulo;
+        }
+        return '';
+    }
+
+
+    hasNextProject(): boolean{
+        return this.indexProject + 1 <= this.projectsList.length;
+    }
+
+    hasPreviousProject(): boolean{
+        return this.indexProject - 1 >= 1;
     }
 
 
