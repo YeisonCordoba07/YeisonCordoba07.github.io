@@ -3,6 +3,7 @@
     height: 100%;
     position: relative;
     padding: 50px 0 200px 0;
+    min-height: 100vh;
 }
 
 section {
@@ -47,6 +48,7 @@ section {
         display: flex;
         flex-direction: column;
         flex-shrink: 3;
+        gap: 10px;
     }
 
     &__title{
@@ -65,14 +67,20 @@ section {
     &__description{
         font-family: var(--font-family);
         color: var(--proyecto-header-description-color);
+        /*background-color: goldenrod;
+        //background-color: firebrick;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;*/
+
     }
 
     &__buttons-container{
         display: flex;
         gap: 10px;
 
-        margin-top: 20px;
         flex-wrap: wrap;
+        margin-top: auto;
 
     }
 
@@ -182,6 +190,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     &__background{
         display: flex;
@@ -207,7 +217,7 @@ section {
 
     &__figure{
         width: 85vw;
-        height: 90vh;
+        height: 85vh;
         margin: auto;
         background-color: black;
         display: flex;
@@ -227,7 +237,7 @@ section {
         position: absolute;
         top: 20px;
         right: 20px;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(66, 66, 66, 0.5);
         color: white;
         border: none;
         font-size: 24px;
@@ -406,6 +416,8 @@ section {
     justify-content: center;
     align-items: center;
 
+
+
 }
 
 
@@ -418,15 +430,22 @@ section {
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 7px;
     font-size: 15px;
     transition-duration: 150ms;
     font-weight: 600;
     cursor: pointer;
     color: darkorange;
+    border-radius: 25px;
+    background-color: var(--proyecto-back-button-background-color);
+    width: fit-content;
+    padding: 5px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09),
+    0 1px 4px rgba(0, 0, 0, 0.04);
 
     &:hover{
-
+        transform: scale(1.05);
     }
 }
 .project-link-btn {
@@ -435,9 +454,9 @@ section {
     font-size: 16px;
     font-weight: 800;
     font-family: var(--font-family-body);
-    padding: 0 15px;
-    height: 40px;
-    gap: 8px;
+    padding: 0 20px;
+    height: 48px;
+    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,7 +481,7 @@ section {
     }
 
     &--deploy {
-        background: var(--social-icons-background-color-cv);
+        background: var(--proyecto-icons-background-color-deploy);
         color: var(--social-icons-color-cv);
         white-space: nowrap;
 
@@ -475,12 +494,14 @@ section {
 
     &--github {
         background-color: var(--social-icons-background);
-        color: var(--social-icons-color-github);
+        color: var(--proyecto-icon-color-github);
 
         &:hover {
-            background-color: #B4DCF5;
-            color: #075985;
-            box-shadow: 0 4px 14px rgba(3, 105, 161, 0.22);
+            //background-color: #ffab6f;
+            background-color: #ff856f;
+            color: #a23e00;
+           // box-shadow: 0 4px 14px rgb(255, 171, 111);
+            box-shadow: 0 0px 14px rgba(110, 43, 1, 0.25);
         }
     }
 

@@ -24,16 +24,6 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     techMapIcon = TECHNOLOGY_MAP;
 
 
-    images = [
-        'https://picsum.photos/4096/2160 ',
-        'https://picsum.photos/2048/1080',
-        'https://picsum.photos/1900/1080',
-        'https://picsum.photos/500/500',
-        'https://picsum.photos/200/700',
-        'https://picsum.photos/200/300',
-    ]
-
-
 
     private router = inject(Router);
     private activatedRoute = inject(ActivatedRoute);
@@ -104,15 +94,20 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
 
     previousImage() {
-        if (this.selectedImage !== -1) {
-            this.selectedImage = (this.selectedImage - 1 + this.images.length) % this.images.length;
+        const totalImages = this.project?.fotos?.resultados?.length ?? 0;
+
+        if (this.selectedImage !== -1 && totalImages > 0) {
+            this.selectedImage = (this.selectedImage - 1 + totalImages) % totalImages;
             this.resetZoom();
         }
     }
 
+
     nextImage() {
+        const totalImages = this.project?.fotos?.resultados?.length ?? 0;
+
         if (this.selectedImage !== -1) {
-            this.selectedImage = (this.selectedImage + 1) % this.images.length;
+            this.selectedImage = (this.selectedImage + 1) % totalImages;
             this.resetZoom();
         }
     }

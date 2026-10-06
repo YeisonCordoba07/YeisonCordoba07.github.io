@@ -1,162 +1,203 @@
 [
-  {
-    "titulo_url": "udea-food",
-    "numero_url": "1",
-    "titulo": "UdeA Food",
-    "subtitulo": "Plataforma de pedidos de comida para la UdeA",
-    "descripcion": "Aplicación web inspirada en Rappi y Uber Eats, enfocada en las tiendas de la Universidad de Antioquia. Los usuarios pueden crear tiendas y gestionar productos, mientras los clientes exploran y compran.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "",
-      "frontend_github": "1",
-      "backend_github": ""
+    {
+        "titulo_url": "udea-food",
+        "numero_url": "1",
+        "titulo": "UdeA Food",
+        "subtitulo": "Plataforma de pedidos de comida para la UdeA",
+        "descripcion": "Aplicación web inspirada en Rappi y Uber Eats, enfocada en las tiendas de la Universidad de Antioquia. Los usuarios pueden crear tiendas y gestionar productos, mientras los clientes exploran y compran.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "",
+            "frontend_github": "https://github.com/YeisonCordoba07/udea-food-front",
+            "backend_github": "https://github.com/YeisonCordoba07/udea-food-backend"
+        },
+        "tecnologias": [
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "Java",
+            "Spring",
+            "MySQL",
+            "MongoDB"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/PaginaUdeAFoodLarge.jpg",
+                "imagen_home": "assets/proyectos/PaginaUdeAFoodLarge.jpg"
+            },
+            "resultados": [
+                "assets/proyectos/udeafood/img.png",
+                "assets/proyectos/udeafood/img_1.png",
+                "assets/proyectos/udeafood/img_2.png",
+                "assets/proyectos/udeafood/img_3.png",
+                "assets/proyectos/udeafood/img_4.png",
+                "assets/proyectos/udeafood/img_5.png",
+                "assets/proyectos/udeafood/img_6.png",
+                "assets/proyectos/udeafood/img_7.png",
+                "assets/proyectos/udeafood/img_8.png",
+                "assets/proyectos/udeafood/img_9.png",
+                "assets/proyectos/udeafood/img_10.png",
+                "assets/proyectos/udeafood/img_11.png",
+                "assets/proyectos/udeafood/img_12.png"
+            ]
+        }
     },
-    "tecnologias": [
-      "Angular",
-      "TypeScript",
-      "JavaScript",
-      "Java",
-      "Spring",
-      "MySQL",
-      "MongoDB"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/PaginaUdeAFoodLarge.jpg",
-      "imagen_home": "assets/proyectos/PaginaUdeAFoodLarge.jpg",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/1080/720",
-      "imagen_3": "https://picsum.photos/800/600",
-      "imagen_4": "https://picsum.photos/1366/768",
-      "imagen_5": "https://picsum.photos/2560/1440",
-      "imagen_6": "https://picsum.photos/1280/1024"
-    }
-  },
-  {
-    "titulo_url": "disney-plus",
-    "numero_url": "2",
-    "titulo": "Disney Plus",
-    "subtitulo": "",
-    "descripcion": "Réplica responsive de la página principal de Disney Plus hecha con React y NextJS. Incluye scroll horizontal y atomic design, adaptada a todo tipo de dispositivos, con enfoque en usabilidad.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "https://yeisoncordoba07-disney-plus-clone.vercel.app/",
-      "frontend_github": "https://github.com/YeisonCordoba07/disney-plus-clone",
-      "backend_github": ""
+    {
+        "titulo_url": "disney-plus",
+        "numero_url": "2",
+        "titulo": "Disney Plus",
+        "subtitulo": "",
+        "descripcion": "Réplica responsive de la página principal de Disney Plus hecha con React y NextJS. Incluye scroll horizontal y atomic design, adaptada a todo tipo de dispositivos, con enfoque en usabilidad.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "https://yeisoncordoba07-disney-plus-clone.vercel.app/",
+            "frontend_github": "https://github.com/YeisonCordoba07/disney-plus-clone",
+            "backend_github": ""
+        },
+        "tecnologias": [
+            "React",
+            "NextJS",
+            "TypeScript",
+            "SCSS"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/PaginaDisneyPlusLarge.jpg",
+                "imagen_home": "assets/proyectos/PaginaDisneyPlusLarge.jpg"
+            },
+            "resultados": [
+                "assets/proyectos/disneyplus/fullpage2.png",
+                "https://picsum.photos/1366/768",
+                "https://picsum.photos/1536/864",
+                "https://picsum.photos/1440/900",
+                "https://picsum.photos/1600/900"
+            ]
+        }
     },
-    "tecnologias": [
-      "React",
-      "NextJS",
-      "TypeScript",
-      "SCSS"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/PaginaDisneyPlusLarge.jpg",
-      "imagen_home": "assets/proyectos/PaginaDisneyPlusLarge.jpg",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/1366/768",
-      "imagen_3": "https://picsum.photos/1536/864",
-      "imagen_4": "https://picsum.photos/1440/900",
-      "imagen_5": "https://picsum.photos/1600/900"
-    }
-  },
-  {
-    "titulo_url": "emason",
-    "numero_url": "3",
-    "titulo": "Emason",
-    "subtitulo": "",
-    "descripcion": "Aplicación web para gestionar artículos de compra con marcas y categorías. Integra un sistema de roles con tres tipos de usuarios y permisos específicos.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "",
-      "frontend_github": "https://github.com/orgs/BootcampPragma/repositories",
-      "backend_github": ""
+    {
+        "titulo_url": "emason",
+        "numero_url": "3",
+        "titulo": "Emason",
+        "subtitulo": "",
+        "descripcion": "Aplicación web para gestionar artículos de compra con marcas y categorías. Integra un sistema de roles con tres tipos de usuarios y permisos específicos.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "",
+            "frontend_github": "https://github.com/orgs/BootcampPragma/repositories",
+            "backend_github": ""
+        },
+        "tecnologias": [
+            "Angular",
+            "JavaScript",
+            "TypeScript",
+            "Java",
+            "Spring",
+            "MySQL"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/emasonall-shadow.png",
+                "imagen_home": "assets/proyectos/emasonall-shadow.png"
+            },
+            "resultados": [
+                "assets/proyectos/emason/ArticuloMenu.png",
+                "assets/proyectos/emason/AuxArticuloLarge.png",
+                "assets/proyectos/emason/AuxArticuloMedium.png",
+                "assets/proyectos/emason/AuxArticuloSmall.png",
+                "assets/proyectos/emason/CrearArticuloLarge.png",
+                "assets/proyectos/emason/CrearArticuloMedium.png",
+                "assets/proyectos/emason/CrearArticuloSmall.png",
+                "assets/proyectos/emason/CrearAuxiliarLarge.png",
+                "assets/proyectos/emason/CrearCategoriaLarge.png",
+                "assets/proyectos/emason/CrearMarcaLarge.png",
+                "assets/proyectos/emason/MarcasLarge.png",
+                "assets/proyectos/emason/VerArticulosLarge.png",
+                "assets/proyectos/emason/VerCategoriaLarge.png"
+            ]
+        }
     },
-    "tecnologias": [
-      "Angular",
-      "JavaScript",
-      "TypeScript",
-      "Java",
-      "Spring",
-      "MySQL"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/emasonall-shadow.png",
-      "imagen_home": "assets/proyectos/emasonall-shadow.png",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/1440/900",
-      "imagen_3": "https://picsum.photos/1280/720"
-    }
-  },
-  {
-    "titulo_url": "master-class",
-    "numero_url": "4",
-    "titulo": "Master Class",
-    "subtitulo": "",
-    "descripcion": "Réplica de la página web de MasterClass usando HTML y CSS. Proyecto centrado en practicar maquetación y fidelidad visual.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio4/",
-      "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio4",
-      "backend_github": ""
+    {
+        "titulo_url": "master-class",
+        "numero_url": "4",
+        "titulo": "Master Class",
+        "subtitulo": "",
+        "descripcion": "Réplica de la página web de MasterClass usando HTML y CSS. Proyecto centrado en practicar maquetación y fidelidad visual.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio4/",
+            "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio4",
+            "backend_github": ""
+        },
+        "tecnologias": [
+            "HTML",
+            "CSS"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/PaginaMasterClassLarge.jpg",
+                "imagen_home": "assets/proyectos/PaginaMasterClassLarge.jpg"
+            },
+            "resultados": [
+                "assets/proyectos/masterclass/msaterclass2.png",
+                "https://picsum.photos/800/600",
+                "https://picsum.photos/1280/800",
+                "https://picsum.photos/1024/768"
+            ]
+        }
     },
-    "tecnologias": [
-      "HTML",
-      "CSS"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/PaginaMasterClassLarge.jpg",
-      "imagen_home": "assets/proyectos/PaginaMasterClassLarge.jpg",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/800/600",
-      "imagen_3": "https://picsum.photos/1280/800",
-      "imagen_4": "https://picsum.photos/1024/768"
-    }
-  },
-  {
-    "titulo_url": "correos-esp",
-    "numero_url": "5",
-    "titulo": "Correos España",
-    "subtitulo": "",
-    "descripcion": "Recreación de la página web de Correos España con HTML y CSS. Ejercicio para fortalecer habilidades en diseño estático y organización visual.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio7/",
-      "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio7",
-      "backend_github": ""
+    {
+        "titulo_url": "correos-esp",
+        "numero_url": "5",
+        "titulo": "Correos España",
+        "subtitulo": "",
+        "descripcion": "Recreación de la página web de Correos España con HTML y CSS. Ejercicio para fortalecer habilidades en diseño estático y organización visual.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio7/",
+            "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio7",
+            "backend_github": ""
+        },
+        "tecnologias": [
+            "HTML",
+            "CSS"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/PaginaCorreosLarge.jpg",
+                "imagen_home": "assets/proyectos/PaginaCorreosLarge.jpg"
+            },
+            "resultados": [
+                "assets/proyectos/correos/correos.png",
+                "https://picsum.photos/1366/768"
+            ]
+        }
     },
-    "tecnologias": [
-      "HTML",
-      "CSS"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/PaginaCorreosLarge.jpg",
-      "imagen_home": "assets/proyectos/PaginaCorreosLarge.jpg",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/1366/768"
+    {
+        "titulo_url": "mercado-libre",
+        "numero_url": "6",
+        "titulo": "Mercado Libre",
+        "subtitulo": "",
+        "descripcion": "Clon de la página de Mercado Libre implementado con HTML y CSS. Proyecto enfocado en interfaces de comercio electrónico y disposición de productos.",
+        "fecha": 2024,
+        "enlaces": {
+            "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio8/",
+            "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio8",
+            "backend_github": ""
+        },
+        "tecnologias": [
+            "HTML",
+            "CSS"
+        ],
+        "fotos": {
+            "presentacion": {
+                "imagen_portada": "assets/proyectos/PaginaMercadoLibreLarge.jpg",
+                "imagen_home": "assets/proyectos/PaginaMercadoLibreLarge.jpg"
+            },
+            "resultados": [
+                "https://picsum.photos/1920/1080",
+                "https://picsum.photos/1440/900",
+                "https://picsum.photos/1536/864"
+            ]
+        }
     }
-  },
-  {
-    "titulo_url": "mercado-libre",
-    "numero_url": "6",
-    "titulo": "Mercado Libre",
-    "subtitulo": "",
-    "descripcion": "Clon de la página de Mercado Libre implementado con HTML y CSS. Proyecto enfocado en interfaces de comercio electrónico y disposición de productos.",
-    "fecha": 2024,
-    "enlaces": {
-      "desplegado": "https://yeisoncordoba07.github.io/DesarrolloWebEjercicio8/",
-      "frontend_github": "https://github.com/YeisonCordoba07/DesarrolloWebEjercicio8",
-      "backend_github": ""
-    },
-    "tecnologias": [
-      "HTML",
-      "CSS"
-    ],
-    "fotos": {
-      "imagen_portada": "assets/proyectos/PaginaMercadoLibreLarge.jpg",
-      "imagen_home": "assets/proyectos/PaginaMercadoLibreLarge.jpg",
-      "imagen_1": "https://picsum.photos/1920/1080",
-      "imagen_2": "https://picsum.photos/1440/900",
-      "imagen_3": "https://picsum.photos/1536/864"
-    }
-  }
 ]

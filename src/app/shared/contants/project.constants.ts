@@ -20,11 +20,14 @@ export interface ProjectLinks {
     frontend_github: string;
     backend_github: string;
 }
-
-export interface ProjectFotos {
+export interface ProjectPresentationImages{
     imagen_portada: string;
     imagen_home: string;
-    [key: string]: string;
+}
+
+export interface ProjectFotos {
+    presentacion: ProjectPresentationImages;
+    resultados: string[];
 }
 
 export interface Project {

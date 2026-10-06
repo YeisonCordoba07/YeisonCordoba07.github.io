@@ -7,7 +7,7 @@
             *ngFor="let project of projectsList; let i = index"
             [title]="project.titulo"
             [description]="project.descripcion"
-            [src]="project.fotos.imagen_portada"
+            [src]="project.fotos.presentacion.imagen_portada"
             [githubLink]="String(i+ 1)"
             [resultLink]="project.enlaces.desplegado"
             [showStar]="project.numero_url === '1' || project.numero_url === '2'"
