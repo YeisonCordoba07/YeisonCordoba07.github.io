@@ -19,8 +19,14 @@
     background-image: var(--document-background-image);
     background-size: 20px 20px, 100% 100%;
 
-    scroll-behavior: smooth;
   }
+
+    html.no-scroll,
+    body.no-scroll {
+        overflow: hidden !important;
+        height: 100vh !important;
+        scrollbar-gutter: stable;
+    }
 
 
 
@@ -177,6 +183,34 @@
     --footer-cv-border-hover: 2px dotted  #27272a;
     --footer-cv-background-color-hover: #27272a;
     --footer-cv-text-color-hover: oklch(82.8% 0.189 84.429);
+
+
+
+
+    /* -------------------- Proyecto -------------------- */
+    --proyecto-header-background: linear-gradient(
+            45deg,
+            rgba(255, 165, 0, 0.8),
+            rgba(255, 222, 173, 0.8),
+            rgba(255, 179, 64, 0.5),
+
+            rgba(255, 222, 173, 1),
+            rgba(255, 165, 0, 0.3),
+            rgba(255, 165, 0, 1)
+    );
+
+    --proyecto-header-description-color: grey;
+    --proyecto-image-background-color: white;
+    --proyecto-general-background: white;
+    --proyecto-galley-background: #20b2aa;
+    --proyecto-general-border-color: #e5e5e5;
+    --proyecto-navbar-title-color: black;
+    --proyecto-icon-color-github: orangered;
+    --proyecto-back-button-background-color: white;
+    --proyecto-icons-background-color-deploy: crimson;
+
+
+
 }
 
 
@@ -324,6 +358,18 @@
     --footer-cv-background-color-hover: #d2a8ff;
     --footer-cv-text-color-hover: #7e22ce;
 
+
+    --proyecto-header-background: var(--card-project-background-gradient);
+    --proyecto-header-description-color: var(--card-project-title);
+    --proyecto-image-background-color: rgba(0, 0, 0, 0.4);
+    --proyecto-general-background: #262729;
+    --proyecto-galley-background: #176963;
+    --proyecto-general-border-color: #2c2d2f;
+    --proyecto-navbar-title-color: var(--card-project-title);
+    --proyecto-icons-color-github: var(--social-icons-color-github);
+    --proyecto-back-button-background-color: #414346;
+    --proyecto-icons-background-color-deploy: var(--social-icons-background-color-cv);
+
 }
 
 
@@ -365,6 +411,26 @@
 .sombra_sutil {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05),
     0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+
+.arrow-button{
+    border-radius: 50px;
+    background-color: rgba(141, 141, 141, 0.9);
+    color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition-duration: 150ms;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: rgba(166, 166, 166, 0.9);
+        transform: scale(1.1);
+
+    }
 }
 
 

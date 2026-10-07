@@ -1,0 +1,24 @@
+## Variables proyectos
+- titulo url
+- numero url
+- titulo
+- subtitulo
+- descripcion
+- año
+- enlaces (lista)
+  - desplegado
+  - frontend github
+  - backend github
+- tecnologias (lista)
+  - angular
+  - typescript
+  - javascript
+  - etc
+- fotos
+  - imagen portada
+  - imagen home
+  - imagen 1
+  - imagen 2
+  - imagen 3
+  - imagen 4
+  

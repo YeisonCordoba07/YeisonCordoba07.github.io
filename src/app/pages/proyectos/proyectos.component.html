@@ -1,0 +1,172 @@
+<div class="proyecto">
+    <section>
+
+        <a [routerLink]="'/'" class="back-button">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M5 12l6 6" />
+                <path d="M5 12l6 -6" />
+            </svg>
+            Volver a proyectos
+        </a>
+
+        <div class="header">
+
+            <div class="header__info-container">
+                <h1 class="header__title">{{ project?.titulo }}</h1>
+                <span class="header__subtitle">{{ project?.subtitulo }}</span>
+                <p class="header__description">{{ project?.descripcion }}</p>
+
+                <div class="header__buttons-container">
+                    <a class="project-link-btn--deploy project-link-btn" [href]="project?.enlaces?.desplegado" *ngIf="project?.enlaces?.desplegado" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                        <span class="card-project__arrow">
+                            Ver
+
+                        </span>
+                    </a>
+
+                    <a class="project-link-btn--github project-link-btn" [href]="project?.enlaces?.frontend_github" *ngIf="project?.enlaces?.frontend_github" target="_blank">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+                        Frontend</a>
+
+                    <a class="project-link-btn--backend project-link-btn" [href]="project?.enlaces?.backend_github" *ngIf="project?.enlaces?.backend_github" target="_blank">                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-server"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-2" /><path d="M3 15a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -2" /><path d="M7 8l0 .01" /><path d="M7 16l0 .01" /></svg>
+                        Backend</a>
+
+                </div>
+            </div>
+
+            <img class="header__image-container" [src]="project?.fotos?.presentacion?.imagen_portada ?? ''" alt="">
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- tecnologias -->
+        <div class="technologies">
+            <h2 class="project__title">Tecnologias</h2>
+            <div class="technologies__tags">
+                <app-tag *ngFor="let tech of project?.tecnologias"
+                         [tagName]="tech" [src]="techMapIcon[tech]"></app-tag>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- fotos -->
+
+        <div class="gallery">
+            <h2 class="project__title">Fotos</h2>
+            <ul class="gallery__list">
+                <li *ngFor="let im of project?.fotos?.resultados; let i = index">
+                    <button class="gallery__button " (click)="openVisor(i)">
+                        <img [ngSrc]="im" class="gallery__image " fill />
+                    </button>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+
+
+        <!-- nav -->
+        <div class="project-nav">
+
+            <!-- NEXT PROJECT -->
+            <button class="project-nav__button project-nav__button--left" (click)="previousProject()" [disabled]="!hasPreviousProject()">
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M5 12l6 6" />
+                    <path d="M5 12l6 -6" />
+                </svg>
+
+                <div class="project-nav__text project-nav__text--left">
+                    <span class="project-nav__title">PROYECTO ANTERIOR</span>
+                    <span class="project-nav__name">{{ generatePreviousNameProject() }}</span>
+                </div>
+            </button>
+
+
+            <!-- HOME -->
+            <a class="project-nav__button project-nav__button--home" routerLink="/">
+                <svg class="project-nav__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M19 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    <path d="M19 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                </svg>
+            </a>
+
+
+            <!-- PREVIOUS PROJECT -->
+            <button class="project-nav__button project-nav__button--right" (click)="nextProject()" [disabled]="!hasNextProject()">
+                <div class="project-nav__text project-nav__text--right">
+                    <span class="project-nav__title">PROYECTO SIGUIENTE</span>
+                    <span class="project-nav__name">{{ generateNextNameProject()}}</span>
+                </div>
+
+                <svg class="project-nav__arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 12l14 0" />
+                    <path d="M13 18l6 -6" />
+                    <path d="M13 6l6 6" />
+                </svg>
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <div class="visor" *ngIf="showImage" (click)="closeVisor()">
+        <div class="visor__background" (click)="$event.stopPropagation()">
+            <button class="visor__close-btn" (click)="closeVisor()">✕</button>
+
+            <app-left-arrow-button class="visor__left" (onClick)="previousImage()"></app-left-arrow-button>
+            <app-right-arrow-button class="visor__right" (onClick)="nextImage()"></app-right-arrow-button>
+
+            <figure class="visor__figure" (wheel)="onZoomScroll($event)">
+                <img class="visor__image" [src]="project?.fotos?.resultados?.[selectedImage] " alt=""
+                     [style.transform]="'scale(' + zoomScale + ')'">
+
+            </figure>
+
+            <div class="visor__controls">
+                <button (click)="zoomOut()" [disabled]="zoomScale <= 0.5">-</button>
+                <span class="visor__zoom-percentage">{{ (zoomScale * 100) | number:'1.0-0' }}%</span>
+                <button (click)="zoomIn()" [disabled]="zoomScale >= 3">+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

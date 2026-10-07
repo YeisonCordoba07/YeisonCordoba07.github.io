@@ -4,8 +4,12 @@ import {
   DISNEY_DESCRIPTION,
   EMASON_DESCRIPTION,
   MASTERCLASS_DESCRIPTION, MERCADO_DESCRIPTION,
-  UDEAFOOD_DESCRIPTION
+  UDEAFOOD_DESCRIPTION,
+  Project
 } from "../../../shared/contants/project.constants";
+import {TECHNOLOGY_MAP} from "../../../shared/contants/tag.constants";
+
+import projectsData from "../../../shared/contants/proyectos.json";
 
 @Component({
   selector: 'app-project',
@@ -13,6 +17,9 @@ import {
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+
+    techMapIcon = TECHNOLOGY_MAP;
+    projectsList: Project[] = projectsData as Project[];
 
   constructor() { }
 
@@ -26,4 +33,5 @@ export class ProjectComponent implements OnInit {
   protected readonly MASTERCLASS_DESCRIPTION = MASTERCLASS_DESCRIPTION;
   protected readonly CORREOS_DESCRIPTION = CORREOS_DESCRIPTION;
   protected readonly MERCADO_DESCRIPTION = MERCADO_DESCRIPTION;
+    protected readonly String = String;
 }

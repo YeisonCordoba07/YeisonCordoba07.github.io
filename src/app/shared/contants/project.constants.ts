@@ -14,3 +14,36 @@ export const CORREOS_DESCRIPTION = "Recreación de la página web de Correos Esp
 export const MERCADO_DESCRIPTION = "Clon de la página de Mercado Libre implementado con HTML y CSS. Proyecto enfocado en interfaces de comercio electrónico y disposición de productos.";
 
 
+
+export interface ProjectLinks {
+    desplegado: string;
+    frontend_github: string;
+    backend_github: string;
+}
+export interface ProjectPresentationImages{
+    imagen_portada: string;
+    imagen_home: string;
+}
+
+export interface ProjectFotos {
+    presentacion: ProjectPresentationImages;
+    resultados: string[];
+}
+
+export interface Project {
+    titulo_url: string;
+    numero_url: string;
+    titulo: string;
+    subtitulo: string;
+    descripcion: string;
+    fecha: number;
+    enlaces: ProjectLinks;
+    tecnologias: string[];
+    fotos: ProjectFotos;
+}
+
+export const PROJECTS: Project[] = [
+
+
+]
+
