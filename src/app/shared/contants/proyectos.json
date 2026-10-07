@@ -66,11 +66,7 @@
                 "imagen_home": "assets/proyectos/PaginaDisneyPlusLarge.jpg"
             },
             "resultados": [
-                "assets/proyectos/disneyplus/fullpage2.png",
-                "https://picsum.photos/1366/768",
-                "https://picsum.photos/1536/864",
-                "https://picsum.photos/1440/900",
-                "https://picsum.photos/1600/900"
+                "assets/proyectos/disneyplus/fullpage2.png"
             ]
         }
     },
@@ -83,8 +79,8 @@
         "fecha": 2024,
         "enlaces": {
             "desplegado": "",
-            "frontend_github": "https://github.com/orgs/BootcampPragma/repositories",
-            "backend_github": ""
+            "frontend_github": "",
+            "backend_github": "https://github.com/orgs/BootcampPragma/repositories"
         },
         "tecnologias": [
             "Angular",
@@ -138,10 +134,7 @@
                 "imagen_home": "assets/proyectos/PaginaMasterClassLarge.jpg"
             },
             "resultados": [
-                "assets/proyectos/masterclass/msaterclass2.png",
-                "https://picsum.photos/800/600",
-                "https://picsum.photos/1280/800",
-                "https://picsum.photos/1024/768"
+                "assets/proyectos/masterclass/masterclass2.png"
             ]
         }
     },
@@ -167,8 +160,7 @@
                 "imagen_home": "assets/proyectos/PaginaCorreosLarge.jpg"
             },
             "resultados": [
-                "assets/proyectos/correos/correos.png",
-                "https://picsum.photos/1366/768"
+                "assets/proyectos/correos/correos.png"
             ]
         }
     },
@@ -194,9 +186,7 @@
                 "imagen_home": "assets/proyectos/PaginaMercadoLibreLarge.jpg"
             },
             "resultados": [
-                "https://picsum.photos/1920/1080",
-                "https://picsum.photos/1440/900",
-                "https://picsum.photos/1536/864"
+                "assets/proyectos/mercadolibre/mercadolibre.png"
             ]
         }
     }
