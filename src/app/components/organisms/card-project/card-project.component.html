@@ -36,22 +36,9 @@
         <a class="card-project__link" [href]="resultLink" target="_blank" *ngIf="resultLink">
           <app-button>
             <span class="card-project__arrow">
-              Ver
-              <svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                height="23"
-                width="23"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                Ver
             </span>
           </app-button>
         </a>
@@ -61,7 +48,7 @@
 
 
         <a class="card-project__link" [routerLink]="['proyectos', githubLink]"  *ngIf="githubLink">
-          <app-button src="assets/svg/github-black.svg">Código</app-button>
+          <app-button>Mas información</app-button>
         </a>
 
 
