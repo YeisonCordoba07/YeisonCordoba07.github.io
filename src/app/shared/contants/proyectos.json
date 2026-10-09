@@ -22,7 +22,7 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaUdeAFoodLarge.jpg",
+                "imagen_portada": "assets/proyectos/udeafood/udeafood header web 3.webp",
                 "imagen_home": "assets/proyectos/PaginaUdeAFoodLarge.jpg"
             },
             "resultados": [
@@ -97,8 +97,8 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/emasonall-shadow.png",
-                "imagen_home": "assets/proyectos/emasonall-shadow.png"
+                "imagen_portada": "assets/proyectos/emason/WEB pragma 1.webp",
+                "imagen_home":  "assets/proyectos/emason/WEB pragma 1.webp"
             },
             "resultados": [
                 "assets/proyectos/emason/1 pragma.webp",
@@ -132,7 +132,7 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaMasterClassLarge.jpg",
+                "imagen_portada": "assets/proyectos/masterclass/WEB masterclass 1.webp",
                 "imagen_home": "assets/proyectos/PaginaMasterClassLarge.jpg"
             },
             "resultados": [
@@ -167,7 +167,7 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaCorreosLarge.jpg",
+                "imagen_portada": "assets/proyectos/correos/WEB correos 1.webp",
                 "imagen_home": "assets/proyectos/PaginaCorreosLarge.jpg"
             },
             "resultados": [
@@ -198,7 +198,7 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaMercadoLibreLarge.jpg",
+                "imagen_portada": "assets/proyectos/mercadolibre/WEB mer 1.webp",
                 "imagen_home": "assets/proyectos/PaginaMercadoLibreLarge.jpg"
             },
             "resultados": [
