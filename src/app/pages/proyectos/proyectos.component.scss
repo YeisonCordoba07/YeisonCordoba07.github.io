@@ -98,6 +98,11 @@ section {
         box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.05), 0 0 20px 0px rgba(0, 0, 0, 0.12);
         padding: 25px 15px;
         background-color: var(--proyecto-image-background-color);
+
+        //////background-color: blanchedalmond;
+        //--background-color: papayawhip;
+        //background-color: linen;
+        //--background-color: oldlace;
         border-radius: 10px;
         justify-content: center;
         align-items: center;
@@ -189,13 +194,13 @@ section {
     width: 100vw;
     height: 100vh;
     z-index: 200;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.65);
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(12px);
 
     &__background{
@@ -224,7 +229,7 @@ section {
         width: 85vw;
         height: 85vh;
         margin: auto;
-        background-color: black;
+        background-color: #232a30;
         display: flex;
         overflow: hidden;
 

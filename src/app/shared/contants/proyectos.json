@@ -22,23 +22,23 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaUdeAFoodLarge.jpg",
+                "imagen_portada": "assets/proyectos/udeafood/udeafood header web 3.webp",
                 "imagen_home": "assets/proyectos/PaginaUdeAFoodLarge.jpg"
             },
             "resultados": [
-                "assets/proyectos/udeafood/img.png",
-                "assets/proyectos/udeafood/img_1.png",
-                "assets/proyectos/udeafood/img_2.png",
-                "assets/proyectos/udeafood/img_3.png",
-                "assets/proyectos/udeafood/img_4.png",
-                "assets/proyectos/udeafood/img_5.png",
-                "assets/proyectos/udeafood/img_6.png",
-                "assets/proyectos/udeafood/img_7.png",
-                "assets/proyectos/udeafood/img_8.png",
-                "assets/proyectos/udeafood/img_9.png",
-                "assets/proyectos/udeafood/img_10.png",
-                "assets/proyectos/udeafood/img_11.png",
-                "assets/proyectos/udeafood/img_12.png"
+                "assets/proyectos/udeafood/WEBP 2 Home.webp",
+                "assets/proyectos/udeafood/JPG 3 Buscar tiendas.jpg",
+                "assets/proyectos/udeafood/JPG 4 Buscar productos.jpg",
+                "assets/proyectos/udeafood/JPG 4 2 Producto detalle.jpg",
+                "assets/proyectos/udeafood/JPG 5 Carrito de compra.jpg",
+                "assets/proyectos/udeafood/JPG 7 Perfil tienda.jpg",
+                "assets/proyectos/udeafood/JPG 7 1 Perfil tienda zoom.jpg",
+                "assets/proyectos/udeafood/8 Crear producto simple.png",
+                "assets/proyectos/udeafood/6 Crear producto categorias.png",
+                "assets/proyectos/udeafood/8 1 Crear producto ingrediente.png",
+                "assets/proyectos/udeafood/WEBP 1 Inicio de sesion.webp",
+
+                "assets/proyectos/udeafood/9 Footer.png"
             ]
         }
     },
@@ -66,6 +66,11 @@
                 "imagen_home": "assets/proyectos/PaginaDisneyPlusLarge.jpg"
             },
             "resultados": [
+
+                "assets/proyectos/disneyplus/1 Disney plus.webp",
+                "assets/proyectos/disneyplus/2 Disney plus.webp",
+                "assets/proyectos/disneyplus/3 Disney plus.webp",
+                "assets/proyectos/disneyplus/4 Disney plus.webp",
                 "assets/proyectos/disneyplus/fullpage2.png"
             ]
         }
@@ -92,23 +97,20 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/emasonall-shadow.png",
-                "imagen_home": "assets/proyectos/emasonall-shadow.png"
+                "imagen_portada": "assets/proyectos/emason/WEB pragma 1.webp",
+                "imagen_home":  "assets/proyectos/emason/WEB pragma 1.webp"
             },
             "resultados": [
-                "assets/proyectos/emason/ArticuloMenu.png",
-                "assets/proyectos/emason/AuxArticuloLarge.png",
-                "assets/proyectos/emason/AuxArticuloMedium.png",
-                "assets/proyectos/emason/AuxArticuloSmall.png",
-                "assets/proyectos/emason/CrearArticuloLarge.png",
-                "assets/proyectos/emason/CrearArticuloMedium.png",
-                "assets/proyectos/emason/CrearArticuloSmall.png",
-                "assets/proyectos/emason/CrearAuxiliarLarge.png",
-                "assets/proyectos/emason/CrearCategoriaLarge.png",
-                "assets/proyectos/emason/CrearMarcaLarge.png",
-                "assets/proyectos/emason/MarcasLarge.png",
-                "assets/proyectos/emason/VerArticulosLarge.png",
-                "assets/proyectos/emason/VerCategoriaLarge.png"
+                "assets/proyectos/emason/1 pragma.webp",
+                "assets/proyectos/emason/2 pragma.webp",
+                "assets/proyectos/emason/3 pragma.webp",
+                "assets/proyectos/emason/4 pragma.webp",
+                "assets/proyectos/emason/5 pragma.webp",
+                "assets/proyectos/emason/7 pragma.webp",
+                "assets/proyectos/emason/8 pragma.webp",
+
+                "assets/proyectos/emason/ArticuloMenu.png"
+
             ]
         }
     },
@@ -130,10 +132,19 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaMasterClassLarge.jpg",
+                "imagen_portada": "assets/proyectos/masterclass/WEB masterclass 1.webp",
                 "imagen_home": "assets/proyectos/PaginaMasterClassLarge.jpg"
             },
             "resultados": [
+                "assets/proyectos/masterclass/1 master.webp",
+                "assets/proyectos/masterclass/2 master.webp",
+                "assets/proyectos/masterclass/3 master.webp",
+                "assets/proyectos/masterclass/4 master.webp",
+                "assets/proyectos/masterclass/img.png",
+                "assets/proyectos/masterclass/5 master.webp",
+                "assets/proyectos/masterclass/6 master.webp",
+                "assets/proyectos/masterclass/7 master.webp",
+                "assets/proyectos/masterclass/8 master.webp",
                 "assets/proyectos/masterclass/masterclass2.png"
             ]
         }
@@ -156,10 +167,15 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaCorreosLarge.jpg",
+                "imagen_portada": "assets/proyectos/correos/WEB correos 1.webp",
                 "imagen_home": "assets/proyectos/PaginaCorreosLarge.jpg"
             },
             "resultados": [
+                "assets/proyectos/correos/1 correos.webp",
+                "assets/proyectos/correos/2 correos.webp",
+                "assets/proyectos/correos/3 correos.webp",
+                "assets/proyectos/correos/4 correos.webp",
+                "assets/proyectos/correos/5 correos.webp",
                 "assets/proyectos/correos/correos.png"
             ]
         }
@@ -182,10 +198,14 @@
         ],
         "fotos": {
             "presentacion": {
-                "imagen_portada": "assets/proyectos/PaginaMercadoLibreLarge.jpg",
+                "imagen_portada": "assets/proyectos/mercadolibre/WEB mer 1.webp",
                 "imagen_home": "assets/proyectos/PaginaMercadoLibreLarge.jpg"
             },
             "resultados": [
+                "assets/proyectos/mercadolibre/1 mer.webp",
+                "assets/proyectos/mercadolibre/2 mer.webp",
+                "assets/proyectos/mercadolibre/3 mer.webp",
+                "assets/proyectos/mercadolibre/4 mer.webp",
                 "assets/proyectos/mercadolibre/mercadolibre.png"
             ]
         }
