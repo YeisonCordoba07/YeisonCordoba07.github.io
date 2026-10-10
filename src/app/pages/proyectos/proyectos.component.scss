@@ -125,6 +125,7 @@ section {
         gap: 10px;
         background-color: var( --proyecto-general-background);
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
         padding: 20px;
         border-radius: 15px;
@@ -528,3 +529,45 @@ section {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .project-nav{
+        gap: 5px;
+    }
+    .project-nav__button{
+        padding: 20px 20px;
+        height: 70px;
+        gap: 5px;
+
+    }
+
+    .header{
+        flex-direction: column-reverse;
+
+        &__image-container{
+            width: 100%;
+        }
+
+        &__buttons-container{
+            margin-top: 20px;
+        }
+    }
+
+    .proyecto{
+        padding: 30px 0 80px 0;
+    }
+
+
+}
+
+

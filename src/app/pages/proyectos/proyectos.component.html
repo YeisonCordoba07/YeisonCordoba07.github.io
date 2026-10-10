@@ -17,8 +17,8 @@
 
             <div class="header__info-container">
                 <h1 class="header__title">{{ project?.titulo }}</h1>
-                <span class="header__subtitle">{{ project?.subtitulo }}</span>
-                <p class="header__description">{{ project?.descripcion }}</p>
+                <span class="header__subtitle" *ngIf="project?.subtitulo">{{ project?.subtitulo }}</span>
+                <p class="header__description" *ngIf="project?.descripcion">{{ project?.descripcion }}</p>
 
                 <div class="header__buttons-container">
                     <a class="project-link-btn--deploy project-link-btn" [href]="project?.enlaces?.desplegado" *ngIf="project?.enlaces?.desplegado" target="_blank">
@@ -101,7 +101,7 @@
                 </svg>
 
                 <div class="project-nav__text project-nav__text--left">
-                    <span class="project-nav__title">PROYECTO ANTERIOR</span>
+                    <span class="project-nav__title">ANTERIOR</span>
                     <span class="project-nav__name">{{ generatePreviousNameProject() }}</span>
                 </div>
             </button>
@@ -123,7 +123,7 @@
             <!-- PREVIOUS PROJECT -->
             <button class="project-nav__button project-nav__button--right" (click)="nextProject()" [disabled]="!hasNextProject()">
                 <div class="project-nav__text project-nav__text--right">
-                    <span class="project-nav__title">PROYECTO SIGUIENTE</span>
+                    <span class="project-nav__title">SIGUIENTE</span>
                     <span class="project-nav__name">{{ generateNextNameProject()}}</span>
                 </div>
 
